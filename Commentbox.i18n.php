@@ -572,13 +572,14 @@ Si hanno commenti su questa pagina? Aggiungere qui o <span class="plainlinks">[{
 
 /** Japanese (日本語)
  * @author Aotake
+ * @author Shirayuki
  */
 $messages['ja'] = array(
 	'commentbox-desc' => '指定したページにコメントボックスを追加する',
-	'commentbox-intro' => '== 意見を投稿する ==
-このページにご意見がありますか？ここに入力するか、あるいは<span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} 直接ページを編集]</span>してください。',
+	'commentbox-intro' => '== 意見を投稿 ==
+このページにご意見がありますか? ここに入力するか、あるいは<span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} ページを直接編集]</span>してください。',
 	'commentbox-savebutton' => '意見を保存',
-	'commentbox-name' => 'お名前:',
+	'commentbox-name' => '名前：',
 	'commentbox-name-explanation' => '<small>(ヒント: [[Special:UserLogin|ログイン]]すると、手動で名前を入力しなくてよくなります)</small>',
 	'commentbox-log' => '新しい意見',
 	'commentbox-first-comment-heading' => '==意見==',
