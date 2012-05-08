@@ -256,6 +256,13 @@ Sie haben einen Kommentar zu dieser Seite? Tragen Sie ihn hier ein oder <span cl
 	'commentbox-name-explanation' => '<small>(Tipp: Wenn Sie sich [[Special:UserLogin|anmelden]], müssen Sie hier nicht mehr Ihren Namen angeben)</small>',
 );
 
+/** Zazaki (Zazaki)
+ * @author Mirzali
+ */
+$messages['diq'] = array(
+	'commentbox-name' => 'Name:',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
