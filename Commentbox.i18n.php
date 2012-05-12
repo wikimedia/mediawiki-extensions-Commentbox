@@ -569,7 +569,7 @@ $messages['ig'] = array(
 	'commentbox-first-comment-heading' => '== Ókwúnókwú ==',
 );
 
-/** Ingush (ГІалгІай Ğalğaj)
+/** Ingush (ГӀалгӀай)
  * @author Amire80
  * @author Sapral Mikail
  */
@@ -862,6 +862,7 @@ Voeg deze hier toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|actio
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'commentbox-desc' => 'Legg til ein kommentarboks til sume sider',
@@ -1280,7 +1281,7 @@ Gheto comenti so sta paxena? Zonta qui o <span class="plainlinks">[{{fullurl:{{F
 	'commentbox-error-empty-comment' => 'Comenti vodi no i xe amessi!',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
