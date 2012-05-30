@@ -1158,6 +1158,24 @@ Har du en kommentar till den här sidan? Lägg till den här eller <span class="
 	'commentbox-error-empty-comment' => 'Tomma kommentarer är inte tillåtna!',
 );
 
+/** Swahili (Kiswahili)
+ * @author Stephenwanjau
+ */
+$messages['sw'] = array(
+	'commentbox-intro' => '==Ongeza maoni==
+Una maoni kuhusu ukurasa huu? Yaongeze hapa <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} hariri ukurasa huu mara moja kwa moja]</span>.',
+	'commentbox-savebutton' => 'Hifadhu ukurasa',
+	'commentbox-name' => 'Jina:',
+	'commentbox-name-explanation' => '<small>(Kidokezo: Kama [[Special:UserLogin|Utaingia]], hautapaswa kujaza jina lako hapa mwenyewe)</small.',
+	'commentbox-log' => 'Maoni mapya',
+	'commentbox-first-comment-heading' => '==Maoni==',
+	'commentbox-regex' => '/\\n==\\s*Maoni\\s*==\\s*\\n/i',
+	'commentbox-errorpage-title' => 'Hitilafu wakati wa kuweka maoni',
+	'commentbox-error-page-nonexistent' => 'Ukarasa huu haupo!',
+	'commentbox-error-namespace' => 'Maoni hayakubaliki katika Chagua eneo la wiki!',
+	'commentbox-error-empty-comment' => 'Maoni matupu hawaruhusiwi!',
+);
+
 /** Tamil (தமிழ்)
  * @author TRYPPN
  */
