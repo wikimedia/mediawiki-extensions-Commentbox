@@ -1321,9 +1321,10 @@ $messages['yi'] = array(
 	'commentbox-name' => 'נאָמען',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author PhiLiP
  * @author Sweeite012f
+ * @author Xiaomingyan
  * @author 阿pp
  */
 $messages['zh-hans'] = array(
@@ -1335,8 +1336,8 @@ $messages['zh-hans'] = array(
 	'commentbox-name' => '名称：',
 	'commentbox-name-explanation' => '<small>(提示：[[Special:UserLogin|登入]]后不需要手动填写姓名)</small>',
 	'commentbox-log' => '新评论',
-	'commentbox-first-comment-heading' => '== 注释 ==',
-	'commentbox-regex' => '/\\n==\\s*注释\\s*==\\s*\\n/i',
+	'commentbox-first-comment-heading' => '== 评论 ==',
+	'commentbox-regex' => '/\\n==\\s*评论\\s*==\\s*\\n/i',
 	'commentbox-errorpage-title' => '创建注释时出错',
 	'commentbox-error-page-nonexistent' => '此页面不存在 ！',
 	'commentbox-error-namespace' => '此名字空间禁止使用评论！',
