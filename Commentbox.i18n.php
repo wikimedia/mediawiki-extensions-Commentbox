@@ -74,7 +74,7 @@ $messages['arc'] = array(
 	'commentbox-name' => 'ܫܡܐ:',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -93,7 +93,7 @@ Tienes un comentariu sobro esta páxina? Amiestalu equí o <span class="plainlin
 	'commentbox-error-empty-comment' => '¡Nun se permiten los comentarios baleros!',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vago
  */
@@ -131,7 +131,7 @@ $messages['be-tarask'] = array(
 	'commentbox-error-empty-comment' => 'Пустыя камэнтары не дазволеныя!',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  */
 $messages['bg'] = array(
@@ -161,7 +161,7 @@ $messages['bn'] = array(
 	'commentbox-error-empty-comment' => 'খালি মন্তব্য গ্রহণযোগ্য নয়!',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -181,7 +181,7 @@ Un evezhiadenn bennak hoc\'h eus d\'ober diwar-benn ar bajenn-mañ ? Ouzhpennit 
 	'commentbox-error-empty-comment' => "N'eo ket aotreet an evezhiadennoù goullo !",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -200,7 +200,7 @@ $messages['bs'] = array(
 	'commentbox-error-empty-comment' => 'Prazni komentari nisu dozvoljeni!',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Paucabot
  */
 $messages['ca'] = array(
@@ -218,12 +218,12 @@ $messages['ca'] = array(
 	'commentbox-error-empty-comment' => 'No estan permesos els comentaris buits!',
 );
 
-/** Corsican (Corsu) */
+/** Corsican (corsu) */
 $messages['co'] = array(
 	'commentbox-name' => 'Nome:',
 );
 
-/** Czech (Česky) */
+/** Czech (česky) */
 $messages['cs'] = array(
 	'commentbox-name' => 'Jméno:',
 );
@@ -320,7 +320,7 @@ $messages['eo'] = array(
 	'commentbox-error-empty-comment' => 'Nulaj komentoj ne estas permesita.',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Crazymadlover
  * @author Fitoschido
  */
@@ -340,7 +340,7 @@ Tienes un comentario a esta página? Agrégalo aquí o <span class="plainlinks">
 	'commentbox-error-empty-comment' => 'No se permiten comentarios vacíos.',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  */
 $messages['et'] = array(
@@ -358,7 +358,7 @@ $messages['fa'] = array(
 	'commentbox-name' => 'نام:',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  */
 $messages['fi'] = array(
@@ -377,7 +377,7 @@ Onko sinulla kommentti tästä sivusta? Lisää se tänne tai <span class="plain
 	'commentbox-error-empty-comment' => 'Tyhjät kommentit eivät ole sallittuja.',
 );
 
-/** French (Français)
+/** French (français)
  * @author PieRRoMaN
  */
 $messages['fr'] = array(
@@ -397,7 +397,7 @@ Vous avez un commentaire sur cette page ? Ajoutez-le ici ou <span class="plainli
 	'commentbox-error-empty-comment' => 'Les commentaires vides ne sont pas autorisés !',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -500,7 +500,7 @@ Maš komentar na tutej stronje? Přidaj jón tu abo <span class="plainlinks">[{{
 	'commentbox-error-empty-comment' => 'Prózdne komentary njejsu dowolene!',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Glanthor Reviol
  */
@@ -521,7 +521,7 @@ Hozzáfűznivalód van ehhez az oldalhoz? Írd le itt, vagy <span class="plainli
 	'commentbox-error-empty-comment' => 'Az üres hozzászólás nem engedélyezett!',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -577,7 +577,7 @@ $messages['inh'] = array(
 	'commentbox-name' => 'ЦӀи:',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Darth Kule
  */
 $messages['it'] = array(
@@ -728,7 +728,7 @@ Veug die hie toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=
 	'commentbox-error-empty-comment' => 'Laeg opmirkinge zeen neet gepermitteerd!',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  */
 $messages['lt'] = array(
@@ -740,7 +740,7 @@ $messages['lt'] = array(
 	'commentbox-error-page-nonexistent' => 'Puslapis neegzistuoja',
 );
 
-/** Latgalian (Latgaļu)
+/** Latgalian (latgaļu)
  * @author Dark Eagle
  */
 $messages['ltg'] = array(
@@ -748,7 +748,7 @@ $messages['ltg'] = array(
 	'commentbox-regex' => '/\\n==\\s*Komentari\\s*==\\s*\\n/i',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -786,7 +786,7 @@ $messages['ml'] = array(
 	'commentbox-error-empty-comment' => 'ശൂന്യമായ അഭിപ്രായങ്ങൾ അനുവദിച്ചിട്ടില്ല!',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -860,7 +860,7 @@ Voeg deze hier toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|actio
 	'commentbox-error-empty-comment' => 'Lege opmerkingen zijn niet toegestaan!',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -881,7 +881,7 @@ Har du ein kommentar til denne sida? Legg han til her eller <span class="plainli
 	'commentbox-error-empty-comment' => 'Tomme kommentarar er ikkje tillatne.',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -909,7 +909,7 @@ $messages['pdc'] = array(
 	'commentbox-regex' => '/\\n==\\s*Aamaerickinge\\s*==\\s*\\n/i',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Sp5uhe
  */
 $messages['pl'] = array(
@@ -959,7 +959,7 @@ $messages['ps'] = array(
 	'commentbox-error-namespace' => 'په دې نوم-تشيال کې د انګېرنو اجازه نشته!',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Indech
  */
@@ -979,7 +979,7 @@ Tem um comentário acerca desta página? Adicione-o aqui ou <span class="plainli
 	'commentbox-error-empty-comment' => 'Comentários vazios não são permitidos!',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  */
 $messages['pt-br'] = array(
@@ -998,7 +998,7 @@ Você tem um comentário sobre esta página? Adicione-o aqui ou <span class="pla
 	'commentbox-error-empty-comment' => 'Comentários vazios não são permitidos!',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Stelistcristi
  */
 $messages['ro'] = array(
@@ -1012,7 +1012,7 @@ $messages['ro'] = array(
 	'commentbox-error-empty-comment' => 'Comentariile goale nu sunt permise!',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -1021,7 +1021,7 @@ $messages['roa-tara'] = array(
 	'commentbox-error-empty-comment' => 'Le commende vacande non ge se ponne mettere!',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -1048,7 +1048,7 @@ $messages['rue'] = array(
 	'commentbox-name' => 'Імя:',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -1058,14 +1058,14 @@ $messages['sah'] = array(
 	'commentbox-regex' => '/\\n==\\s*Быһаарыылар\\s*==\\s*\\n/i',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
 	'commentbox-name' => 'Nomu:',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -1084,7 +1084,7 @@ Chcete túto stránku okomentovať? Napíšte to sem alebo <span class="plainlin
 	'commentbox-error-empty-comment' => 'Prázdne komentáre nie sú povolené!',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1103,7 +1103,7 @@ Imate pripombo na to stran? Dodajte jo tukaj <span class="plainlinks">[{{fullurl
 	'commentbox-error-empty-comment' => 'Prazne pripombe niso dovoljene!',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -1121,7 +1121,7 @@ $messages['sr-ec'] = array(
 	'commentbox-error-empty-comment' => 'Празни коментари нису могући!',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Rancher
  */
 $messages['sr-el'] = array(
@@ -1138,7 +1138,7 @@ Da li želite da komentarišete ovu stranu? Dodajte Vaš komentar ili <span clas
 	'commentbox-error-empty-comment' => 'Prazni komentari nisu mogući!',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Per
  * @author Sertion
  */
@@ -1206,7 +1206,7 @@ $messages['te'] = array(
 	'commentbox-error-empty-comment' => 'ఖాళీ వ్యాఖ్యలని అనుమతించము!',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -1259,7 +1259,7 @@ Bu sayfa ile ilgili bir yorumunuz mu var? Buraya ekleyin ya da <span class="plai
 	'commentbox-error-empty-comment' => 'Boş yorumlara izin verilmiyor!',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Prima klasy4na
  * @author Sodmy
  * @author Тест
@@ -1280,7 +1280,7 @@ $messages['uk'] = array(
 	'commentbox-error-empty-comment' => 'Порожні коментарі не дозволені!',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  * @author Vajotwo
  */
@@ -1344,7 +1344,7 @@ $messages['zh-hans'] = array(
 	'commentbox-error-empty-comment' => '不允许使用空注释 ！',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Mark85296341
  */
 $messages['zh-hant'] = array(
