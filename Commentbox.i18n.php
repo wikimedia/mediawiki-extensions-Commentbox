@@ -111,7 +111,7 @@ $messages['ba'] = array(
 	'commentbox-name' => 'Исем:',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -263,7 +263,7 @@ $messages['diq'] = array(
 	'commentbox-name' => 'Name:',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -413,7 +413,7 @@ $messages['frp'] = array(
 	'commentbox-error-empty-comment' => 'Los comentèros vouedos sont pas ôtorisâs !',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -481,7 +481,7 @@ $messages['he'] = array(
 	'commentbox-error-empty-comment' => 'תגובות ריקות אינן מורשות!',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -1041,7 +1041,7 @@ $messages['ru'] = array(
 	'commentbox-error-empty-comment' => 'Пустые комментарии не допускаются!',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
