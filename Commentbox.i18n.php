@@ -104,7 +104,7 @@ $messages['az'] = array(
 	'commentbox-first-comment-heading' => '== Şərhlər ==',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Roustammr
  */
 $messages['ba'] = array(
@@ -813,14 +813,14 @@ Nak komen pasal laman ini? Tuliskannya di sini atau <span class="plainlinks">[{{
 	'commentbox-error-empty-comment' => 'Komen kosong tidak dibenarkan!',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
 	'commentbox-first-comment-heading' => '== Арсемат-мельть ==',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  * @author Simny
  */
@@ -1299,7 +1299,7 @@ Gheto comenti so sta paxena? Zonta qui o <span class="plainlinks">[{{fullurl:{{F
 	'commentbox-error-empty-comment' => 'Comenti vodi no i xe amessi!',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
