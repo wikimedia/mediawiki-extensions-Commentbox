@@ -223,9 +223,18 @@ $messages['co'] = array(
 	'commentbox-name' => 'Nome:',
 );
 
-/** Czech (česky) */
+/** Czech (česky)
+ * @author Chmee2
+ */
 $messages['cs'] = array(
+	'commentbox-savebutton' => 'Uložit komentář',
 	'commentbox-name' => 'Jméno:',
+	'commentbox-log' => 'Nové komentáře',
+	'commentbox-first-comment-heading' => '== Komentáře ==',
+	'commentbox-errorpage-title' => 'Chyba při vytváření komentáře',
+	'commentbox-error-page-nonexistent' => 'Tato stránka neexistuje!',
+	'commentbox-error-namespace' => 'Komentáře nejsou povoleny v tomto jmenném prostoru!',
+	'commentbox-error-empty-comment' => 'Prázdné komentáře nejsou povoleny.',
 );
 
 /** German (Deutsch)
@@ -356,6 +365,8 @@ $messages['et'] = array(
  */
 $messages['fa'] = array(
 	'commentbox-name' => 'نام:',
+	'commentbox-first-comment-heading' => '== نظرها ==',
+	'commentbox-regex' => '/\\n==\\s*(نظرها|نظرات|نظر)\\s*==\\s*\\n/i',
 );
 
 /** Finnish (suomi)
@@ -614,6 +625,17 @@ $messages['ja'] = array(
 	'commentbox-error-page-nonexistent' => 'ページが存在しません！',
 	'commentbox-error-namespace' => 'この名前空間では意見投稿を受け付けていません！',
 	'commentbox-error-empty-comment' => '空の意見は受け付けていません！',
+);
+
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'commentbox-savebutton' => 'კომენტარის შენახვა',
+	'commentbox-name' => 'სახელი:',
+	'commentbox-log' => 'ახალი კომენტარები',
+	'commentbox-first-comment-heading' => '== კომენტარები ==',
+	'commentbox-regex' => '/\\n==\\s*კომენტარები\\s*==\\s*\\n/i',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -1063,6 +1085,15 @@ $messages['sah'] = array(
  */
 $messages['scn'] = array(
 	'commentbox-name' => 'Nomu:',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'commentbox-name' => 'නම:',
+	'commentbox-log' => 'නව පරිකථන',
+	'commentbox-first-comment-heading' => '== පරිකථන ==',
 );
 
 /** Slovak (slovenčina)
