@@ -1091,9 +1091,11 @@ $messages['scn'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'commentbox-savebutton' => 'පරිකථනය සුරකින්න',
 	'commentbox-name' => 'නම:',
 	'commentbox-log' => 'නව පරිකථන',
 	'commentbox-first-comment-heading' => '== පරිකථන ==',
+	'commentbox-error-page-nonexistent' => 'මෙම පිටුව නොපවතියි!',
 );
 
 /** Slovak (slovenčina)
@@ -1208,12 +1210,17 @@ Una maoni kuhusu ukurasa huu? Yaongeze hapa <span class="plainlinks">[{{fullurl:
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author TRYPPN
  */
 $messages['ta'] = array(
 	'commentbox-name' => 'பெயர்:',
 	'commentbox-log' => 'புதிய கருத்துக்கள்',
 	'commentbox-first-comment-heading' => '== கருத்துக்கள் ==',
+	'commentbox-errorpage-title' => 'கருத்துரை உருவாக்குவதில் பிழை',
+	'commentbox-error-page-nonexistent' => 'இந்தப் பக்கம் இல்லை!',
+	'commentbox-error-namespace' => 'இப் பெயர்வெளியில் கருத்துரைகளுக்கு அனுமதியில்லை!',
+	'commentbox-error-empty-comment' => 'வெற்றுக் கருத்துரைகளுக்கு அனுமதி இல்லை !',
 );
 
 /** Telugu (తెలుగు)
