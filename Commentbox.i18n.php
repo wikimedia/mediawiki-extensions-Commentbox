@@ -977,6 +977,7 @@ $messages['ps'] = array(
 	'commentbox-name' => 'نوم:',
 	'commentbox-log' => 'نوې انګېرنې',
 	'commentbox-first-comment-heading' => '== انګېرنې ==',
+	'commentbox-regex' => '/\\n==\\s*تبصرې\\s*==\\s*\\n/i',
 	'commentbox-error-page-nonexistent' => 'پدې نوم مخ نشته!',
 	'commentbox-error-namespace' => 'په دې نوم-تشيال کې د انګېرنو اجازه نشته!',
 );
@@ -1038,6 +1039,7 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'commentbox-name' => 'Nome:',
 	'commentbox-log' => 'Commende nuève',
 	'commentbox-first-comment-heading' => '== Commende ==',
 	'commentbox-error-empty-comment' => 'Le commende vacande non ge se ponne mettere!',
@@ -1212,8 +1214,10 @@ Una maoni kuhusu ukurasa huu? Yaongeze hapa <span class="plainlinks">[{{fullurl:
 /** Tamil (தமிழ்)
  * @author Karthi.dr
  * @author TRYPPN
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
+	'commentbox-savebutton' => 'கருத்துரையைச் சேமிக்கவும்',
 	'commentbox-name' => 'பெயர்:',
 	'commentbox-log' => 'புதிய கருத்துக்கள்',
 	'commentbox-first-comment-heading' => '== கருத்துக்கள் ==',
