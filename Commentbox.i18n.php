@@ -424,6 +424,13 @@ $messages['frp'] = array(
 	'commentbox-error-empty-comment' => 'Los comentèros vouedos sont pas ôtorisâs !',
 );
 
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'commentbox-name' => 'Ainm:',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
