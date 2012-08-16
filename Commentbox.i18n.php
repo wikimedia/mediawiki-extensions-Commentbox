@@ -360,6 +360,13 @@ $messages['et'] = array(
 	'commentbox-error-namespace' => 'Siin nimeruumis ei ole kommentaarid lubatud.',
 );
 
+/** Basque (euskara)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['eu'] = array(
+	'commentbox-name' => 'Izena:',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  */
@@ -840,6 +847,24 @@ Nak komen pasal laman ini? Tuliskannya di sini atau <span class="plainlinks">[{{
 	'commentbox-error-page-nonexistent' => 'Laman ini tidak wujud!',
 	'commentbox-error-namespace' => 'Komen tidak dibenarkan di ruang nama ini!',
 	'commentbox-error-empty-comment' => 'Komen kosong tidak dibenarkan!',
+);
+
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'commentbox-desc' => 'Iżżid kaxxa għall-kumenti fuq ċerti paġni',
+	'commentbox-intro' => '== Żid kumment... ==
+Għandek kumment fuq din il-paġna? Żidu hawnhekk jew <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} immodifika direttament il-paġna]</span>.',
+	'commentbox-savebutton' => 'Salva l-kumment',
+	'commentbox-name' => 'Isem:',
+	'commentbox-name-explanation' => '<small>(Suġġeriment: Jekk [[Special:UserLogin|tidħol fil-kont]] ma jkollokx għalfejn iddaħħal l-isem proprju tiegħek manwalment)</small>',
+	'commentbox-log' => 'Kummenti ġodda',
+	'commentbox-first-comment-heading' => '== Kummenti ==',
+	'commentbox-regex' => '/\\n==\\s*Kummenti\\s*==\\s*\\n/i',
+	'commentbox-errorpage-title' => "Inqala' żball waqt il-ħolqien tal-kumment",
+	'commentbox-error-page-nonexistent' => 'Din il-paġna ma teżistix!',
+	'commentbox-error-namespace' => "Kummenti mhumiex permessi f'dan l-ispazju tal-isem!",
 );
 
 /** Erzya (эрзянь)
