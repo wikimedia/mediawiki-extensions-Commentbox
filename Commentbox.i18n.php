@@ -865,6 +865,7 @@ Għandek kumment fuq din il-paġna? Żidu hawnhekk jew <span class="plainlinks">
 	'commentbox-errorpage-title' => "Inqala' żball waqt il-ħolqien tal-kumment",
 	'commentbox-error-page-nonexistent' => 'Din il-paġna ma teżistix!',
 	'commentbox-error-namespace' => "Kummenti mhumiex permessi f'dan l-ispazju tal-isem!",
+	'commentbox-error-empty-comment' => 'Kummenti vojta mhumiex permessi!',
 );
 
 /** Erzya (эрзянь)
@@ -1352,6 +1353,14 @@ $messages['uk'] = array(
 	'commentbox-error-page-nonexistent' => 'Цієї сторінки не існує!',
 	'commentbox-error-namespace' => 'Коментарі не дозволені в цьому просторі назв!',
 	'commentbox-error-empty-comment' => 'Порожні коментарі не дозволені!',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'commentbox-savebutton' => 'تبصرہ محفوظ کریں',
+	'commentbox-name' => 'نام:',
 );
 
 /** vèneto (vèneto)
