@@ -266,10 +266,15 @@ Sie haben einen Kommentar zu dieser Seite? Tragen Sie ihn hier ein oder <span cl
 );
 
 /** Zazaki (Zazaki)
+ * @author Erdemaslancan
  * @author Mirzali
  */
 $messages['diq'] = array(
+	'commentbox-savebutton' => 'Vatışi qeyd ke',
 	'commentbox-name' => 'Name:',
+	'commentbox-log' => 'Vatışê newey',
+	'commentbox-first-comment-heading' => '== Vatışi ==',
+	'commentbox-regex' => '/\\n==\\s*Vatışi\\s*==\\s*\\n/i',
 );
 
 /** Lower Sorbian (dolnoserbski)
