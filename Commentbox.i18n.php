@@ -29,13 +29,19 @@ You have a comment on this page? Add it here or <span class="plainlinks">[{{full
  * @author Darth Kule
  * @author EugeneZelenko
  * @author Fryed-peach
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
 	'commentbox-desc' => '{{desc}}',
 	'commentbox-name' => '{{Identical|Name}}',
+	'commentbox-log' => 'This message is used as Edit Summary when the user added a new comment.',
 	'commentbox-first-comment-heading' => '{{Identical|Comment}}',
 	'commentbox-regex' => 'Regular expression that should match {{msg-mw|commentbox-first-comment-heading}}
 {{Identical|Comment}}',
+	'commentbox-errorpage-title' => 'This message is used as page title when failed to create comment.',
+	'commentbox-error-page-nonexistent' => 'Error message',
+	'commentbox-error-namespace' => 'Error message',
+	'commentbox-error-empty-comment' => 'Error message',
 );
 
 /** Afrikaans (Afrikaans)
@@ -632,18 +638,18 @@ Si hanno commenti su questa pagina? Aggiungere qui o <span class="plainlinks">[{
  */
 $messages['ja'] = array(
 	'commentbox-desc' => '指定したページにコメントボックスを追加する',
-	'commentbox-intro' => '== 意見を投稿 ==
-このページにご意見がありますか? ここに入力するか、あるいは<span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} ページを直接編集]</span>してください。',
-	'commentbox-savebutton' => '意見を保存',
-	'commentbox-name' => '名前：',
-	'commentbox-name-explanation' => '<small>(ヒント: [[Special:UserLogin|ログイン]]すると、手動で名前を入力しなくてよくなります)</small>',
-	'commentbox-log' => '新しい意見',
-	'commentbox-first-comment-heading' => '==意見==',
-	'commentbox-regex' => '/\\n==\\s*意見\\s*==\\s*\\n/i',
-	'commentbox-errorpage-title' => '意見を作成中にエラーが発生しました',
-	'commentbox-error-page-nonexistent' => 'ページが存在しません！',
-	'commentbox-error-namespace' => 'この名前空間では意見投稿を受け付けていません！',
-	'commentbox-error-empty-comment' => '空の意見は受け付けていません！',
+	'commentbox-intro' => '== コメントの追加... ==
+このページにコメントしますか? ここに入力するか、<span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} ページを直接編集]</span>してください。',
+	'commentbox-savebutton' => 'コメントを保存',
+	'commentbox-name' => '名前:',
+	'commentbox-name-explanation' => '<small>(ヒント: [[Special:UserLogin|ログイン]]すると、名前を手動で入力する必要がなくなります)</small>',
+	'commentbox-log' => '新規コメント',
+	'commentbox-first-comment-heading' => '== コメント ==',
+	'commentbox-regex' => '/\\n==\\s*コメント\\s*==\\s*\\n/i',
+	'commentbox-errorpage-title' => 'コメントの作成エラー',
+	'commentbox-error-page-nonexistent' => 'このページは存在しません!',
+	'commentbox-error-namespace' => 'この名前空間ではコメントは許可されていません!',
+	'commentbox-error-empty-comment' => '空のコメントは許可されていません!',
 );
 
 /** Georgian (ქართული)
