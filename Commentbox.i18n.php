@@ -117,7 +117,7 @@ $messages['ba'] = array(
 	'commentbox-name' => 'Исем:',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -262,7 +262,7 @@ Du hast einen Kommentar zu dieser Seite? Trage ihn hier ein oder <span class="pl
 	'commentbox-error-empty-comment' => 'Leere Kommentare sind nicht erlaubt!',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Imre
  */
 $messages['de-formal'] = array(
@@ -725,7 +725,7 @@ Häß De en Aamerkung zoh heh dä Sigg? Donn se heh enjävve, udder <span class=
 	'commentbox-error-empty-comment' => 'Aanmerkunge met nix dren nit zohjelohße!',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -886,7 +886,7 @@ $messages['myv'] = array(
 	'commentbox-first-comment-heading' => '== Арсемат-мельть ==',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  * @author Simny
  */
@@ -926,7 +926,7 @@ Voeg deze hier toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|actio
 	'commentbox-error-empty-comment' => 'Lege opmerkingen zijn niet toegestaan!',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -1182,7 +1182,7 @@ Imate pripombo na to stran? Dodajte jo tukaj <span class="plainlinks">[{{fullurl
 	'commentbox-error-empty-comment' => 'Prazne pripombe niso dovoljene!',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -1200,7 +1200,7 @@ $messages['sr-ec'] = array(
 	'commentbox-error-empty-comment' => 'Празни коментари нису могући!',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Rancher
  */
 $messages['sr-el'] = array(
@@ -1415,7 +1415,7 @@ $messages['yi'] = array(
 	'commentbox-name' => 'נאָמען',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author PhiLiP
  * @author Sweeite012f
  * @author Xiaomingyan
@@ -1438,7 +1438,7 @@ $messages['zh-hans'] = array(
 	'commentbox-error-empty-comment' => '不允许使用空注释 ！',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Mark85296341
  */
 $messages['zh-hant'] = array(
