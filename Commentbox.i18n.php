@@ -281,6 +281,7 @@ $messages['diq'] = array(
 	'commentbox-log' => 'Vatışê newey',
 	'commentbox-first-comment-heading' => '== Vatışi ==',
 	'commentbox-regex' => '/\\n==\\s*Vatışi\\s*==\\s*\\n/i',
+	'commentbox-error-page-nonexistent' => 'Ena per çıniya.',
 );
 
 /** Lower Sorbian (dolnoserbski)
