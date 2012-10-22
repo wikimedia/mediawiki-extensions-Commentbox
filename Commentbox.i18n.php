@@ -30,9 +30,11 @@ You have a comment on this page? Add it here or <span class="plainlinks">[{{full
  * @author EugeneZelenko
  * @author Fryed-peach
  * @author Shirayuki
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'commentbox-desc' => '{{desc}}',
+	'commentbox-prefill' => '{{notranslate}}',
 	'commentbox-name' => '{{Identical|Name}}',
 	'commentbox-log' => 'This message is used as Edit Summary when the user added a new comment.',
 	'commentbox-first-comment-heading' => '{{Identical|Comment}}',
@@ -224,7 +226,8 @@ $messages['ca'] = array(
 	'commentbox-error-empty-comment' => 'No estan permesos els comentaris buits!',
 );
 
-/** Corsican (corsu) */
+/** Corsican (corsu)
+ */
 $messages['co'] = array(
 	'commentbox-name' => 'Nome:',
 );
@@ -1458,4 +1461,3 @@ $messages['zh-hant'] = array(
 	'commentbox-error-namespace' => '此名字空間禁止使用評論！',
 	'commentbox-error-empty-comment' => '不允許使用空注釋 ！',
 );
-
