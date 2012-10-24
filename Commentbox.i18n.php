@@ -384,11 +384,13 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author پاناروما
  */
 $messages['fa'] = array(
 	'commentbox-name' => 'نام:',
 	'commentbox-first-comment-heading' => '== نظرها ==',
 	'commentbox-regex' => '/\\n==\\s*(نظرها|نظرات|نظر)\\s*==\\s*\\n/i',
+	'commentbox-error-page-nonexistent' => 'این صفحه وجود ندارد!',
 );
 
 /** Finnish (suomi)
