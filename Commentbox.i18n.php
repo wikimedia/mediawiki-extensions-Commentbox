@@ -246,6 +246,13 @@ $messages['cs'] = array(
 	'commentbox-error-empty-comment' => 'Prázdné komentáře nejsou povoleny.',
 );
 
+/** Danish (dansk)
+ * @author Tjernobyl
+ */
+$messages['da'] = array(
+	'commentbox-name' => 'Navn:',
+);
+
 /** German (Deutsch)
  * @author Imre
  */
@@ -370,6 +377,7 @@ Tienes un comentario a esta página? Agrégalo aquí o <span class="plainlinks">
 $messages['et'] = array(
 	'commentbox-savebutton' => 'Salvesta kommentaar',
 	'commentbox-name' => 'Nimi:',
+	'commentbox-log' => 'Uued kommentaarid',
 	'commentbox-first-comment-heading' => '== Kommentaarid ==',
 	'commentbox-error-page-nonexistent' => 'Seda lehekülge ei ole!',
 	'commentbox-error-namespace' => 'Siin nimeruumis ei ole kommentaarid lubatud.',
