@@ -33,7 +33,7 @@ You have a comment on this page? Add it here or <span class="plainlinks">[{{full
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'commentbox-desc' => '{{desc}}',
+	'commentbox-desc' => '{{desc|name=Commentbox|url=http://www.mediawiki.org/wiki/Extension:Commentbox}}',
 	'commentbox-prefill' => '{{notranslate}}',
 	'commentbox-name' => '{{Identical|Name}}',
 	'commentbox-log' => 'This message is used as Edit Summary when the user added a new comment.',
@@ -251,6 +251,7 @@ $messages['cs'] = array(
  */
 $messages['da'] = array(
 	'commentbox-name' => 'Navn:',
+	'commentbox-error-page-nonexistent' => 'Denne side findes ikke!',
 );
 
 /** German (Deutsch)
@@ -625,6 +626,13 @@ $messages['ig'] = array(
  */
 $messages['inh'] = array(
 	'commentbox-name' => 'ЦӀи:',
+);
+
+/** Icelandic (íslenska)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['is'] = array(
+	'commentbox-name' => 'Nafn:',
 );
 
 /** Italian (italiano)
