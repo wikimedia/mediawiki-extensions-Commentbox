@@ -374,6 +374,7 @@ Tienes un comentario a esta página? Agrégalo aquí o <span class="plainlinks">
 
 /** Estonian (eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
 	'commentbox-savebutton' => 'Salvesta kommentaar',
@@ -382,6 +383,7 @@ $messages['et'] = array(
 	'commentbox-first-comment-heading' => '== Kommentaarid ==',
 	'commentbox-error-page-nonexistent' => 'Seda lehekülge ei ole!',
 	'commentbox-error-namespace' => 'Siin nimeruumis ei ole kommentaarid lubatud.',
+	'commentbox-error-empty-comment' => 'Tühikommentaarid pole lubatud!',
 );
 
 /** Basque (euskara)
@@ -738,7 +740,7 @@ Häß De en Aamerkung zoh heh dä Sigg? Donn se heh enjävve, udder <span class=
 	'commentbox-savebutton' => 'Aanmerkung avshpeishere',
 	'commentbox-name' => 'Name:',
 	'commentbox-name-explanation' => '<small>(Opjepaß: Wann De [[Special:UserLogin|enjelog beß]], moß De nit immer heh Dinge Name entippe)</small>',
-	'commentbox-log' => 'Neu Aanmerkunge',
+	'commentbox-log' => 'Neu Aanmerkonge',
 	'commentbox-first-comment-heading' => '== Aanmerkunge ==',
 	'commentbox-regex' => '/\\n==\\s*Aanmerkunge\\s*==\\s*\\n/i',
 	'commentbox-errorpage-title' => 'Ene Fähler es opjetrodde wi mer en Aanmerkunge aanlääje wullte',
@@ -1163,7 +1165,10 @@ $messages['si'] = array(
 	'commentbox-name' => 'නම:',
 	'commentbox-log' => 'නව පරිකථන',
 	'commentbox-first-comment-heading' => '== පරිකථන ==',
+	'commentbox-regex' => '/\\n==\\s*පරිකථන\\s*==\\s*\\n/i',
+	'commentbox-errorpage-title' => 'පරිකථනය තනන අතරතුර දෝෂය',
 	'commentbox-error-page-nonexistent' => 'මෙම පිටුව නොපවතියි!',
+	'commentbox-error-empty-comment' => 'හිස් පරිකථන වලට ඉඩ ලබා නොදේ!',
 );
 
 /** Slovak (slovenčina)
