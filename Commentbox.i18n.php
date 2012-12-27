@@ -760,6 +760,13 @@ $messages['ku-latn'] = array(
 	'commentbox-error-page-nonexistent' => 'Ev rûpel tune ye!',
 );
 
+/** Kirghiz (Кыргызча)
+ * @author Growingup
+ */
+$messages['ky'] = array(
+	'commentbox-log' => 'Жаңы комментарийлер',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -989,6 +996,20 @@ Avètz un comentari sus aquesta pagina ? Apondètz-o aicí o <span class="plainl
 	'commentbox-error-page-nonexistent' => 'Aquesta pagina existís pas !',
 	'commentbox-error-namespace' => 'Los comentaris son pas autorizats dins aqueste espaci de noms !',
 	'commentbox-error-empty-comment' => 'Los comentaris voids son pas autorizats !',
+);
+
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Jnanaranjan Sahu
+ */
+$messages['or'] = array(
+	'commentbox-savebutton' => 'ମନ୍ତବ୍ୟଟିକୁ ସାଇତିବେ',
+	'commentbox-name' => 'ନାମ:',
+	'commentbox-log' => 'ନୂଆ ମତାମତ',
+	'commentbox-first-comment-heading' => '== ମତାମତ ==',
+	'commentbox-errorpage-title' => 'ମନ୍ତବ୍ୟ ଦେବାରେ ଅସୁବିଧା',
+	'commentbox-error-page-nonexistent' => 'ଏହିପରି କୌଣସି ପୃଷ୍ଠା ନାହିଁ !',
+	'commentbox-error-namespace' => 'ଏହି ନେମସ୍ପେସରେ ମନ୍ତବ୍ୟ ଦେଇ ହେବ ନାହିଁ!',
+	'commentbox-error-empty-comment' => 'ଖାଲି ମନ୍ତବ୍ୟ ଦେଇ ହେବନାହିଁ!',
 );
 
 /** Deitsch (Deitsch)
