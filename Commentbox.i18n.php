@@ -112,6 +112,13 @@ $messages['az'] = array(
 	'commentbox-first-comment-heading' => '== Şərhlər ==',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['azb'] = array(
+	'commentbox-name' => 'آد:',
+);
+
 /** Bashkir (башҡортса)
  * @author Roustammr
  */
