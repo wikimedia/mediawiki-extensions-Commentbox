@@ -121,9 +121,13 @@ $messages['azb'] = array(
 
 /** Bashkir (башҡортса)
  * @author Roustammr
+ * @author Ләйсән
  */
 $messages['ba'] = array(
 	'commentbox-name' => 'Исем:',
+	'commentbox-log' => 'Яңы аңлатмалар',
+	'commentbox-errorpage-title' => 'Аңлатма төҙөгәндә хата китте',
+	'commentbox-error-page-nonexistent' => 'Был бит юҡ!',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -954,7 +958,7 @@ Hebt u een opmerking over deze pagina?
 Voeg deze hier toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} bewerk deze pagina direct]</span>.',
 	'commentbox-savebutton' => 'Opmerking opslaan',
 	'commentbox-name' => 'Naam:',
-	'commentbox-name-explanation' => '<small>Tip: Als u zich [[Special:UserLogin|aanmeld]], hoeft u uw naam hier niet in de voeren.</small>',
+	'commentbox-name-explanation' => '<small>Tip: als u zich [[Special:UserLogin|aanmeld]], hoeft u uw naam hier niet in de voeren.</small>',
 	'commentbox-log' => 'Nieuwe opmerkingen',
 	'commentbox-first-comment-heading' => '== Opmerkingen ==',
 	'commentbox-regex' => '/\\n==\\s*Opmerkingen\\s*==\\s*\\n/i',
@@ -962,6 +966,16 @@ Voeg deze hier toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|actio
 	'commentbox-error-page-nonexistent' => 'Deze pagina bestaat niet!',
 	'commentbox-error-namespace' => 'Opmerkingen zijn niet toegestaan in deze naamruimte!',
 	'commentbox-error-empty-comment' => 'Lege opmerkingen zijn niet toegestaan!',
+);
+
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'commentbox-intro' => '== Je kunt een opmerking toevoegen... ==
+Heb je een opmerking over deze pagina?
+Voeg deze hier toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} bewerk deze pagina direct]</span>.',
+	'commentbox-name-explanation' => '<small>Tip: als je je [[Special:UserLogin|aanmeld]], hoef je je naam hier niet in de voeren.</small>',
 );
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
@@ -1135,6 +1149,7 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'commentbox-savebutton' => "Reggistre 'u commende",
 	'commentbox-name' => 'Nome:',
 	'commentbox-log' => 'Commende nuève',
 	'commentbox-first-comment-heading' => '== Commende ==',
