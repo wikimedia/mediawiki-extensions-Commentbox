@@ -545,6 +545,18 @@ $messages['he'] = array(
 	'commentbox-error-empty-comment' => 'תגובות ריקות אינן מורשות!',
 );
 
+/** Hindi (हिन्दी)
+ * @author Ansumang
+ */
+$messages['hi'] = array(
+	'commentbox-savebutton' => 'टीप्पणी बचाएं',
+	'commentbox-name' => 'नाम:',
+	'commentbox-log' => 'नई टिप्पणियाँ',
+	'commentbox-first-comment-heading' => '== टिप्पणियां ==',
+	'commentbox-regex' => '/\\n==\\s*टिप्पणियां\\s*==\\s*\\n/i',
+	'commentbox-error-page-nonexistent' => 'यह पृष्ठ मौजूद नहीं है!',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
@@ -1204,6 +1216,7 @@ $messages['scn'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'commentbox-desc' => 'කිසියම් පිටු කිහිපයකට පරිකථනකොටු එක් කරයි',
 	'commentbox-savebutton' => 'පරිකථනය සුරකින්න',
 	'commentbox-name' => 'නම:',
 	'commentbox-log' => 'නව පරිකථන',
@@ -1264,6 +1277,7 @@ $messages['sr-ec'] = array(
 	'commentbox-name' => 'Име:',
 	'commentbox-log' => 'Нови коментари',
 	'commentbox-first-comment-heading' => '== Коментари ==',
+	'commentbox-regex' => '/\\n==\\s*Коментари\\s*==\\s*\\n/i',
 	'commentbox-errorpage-title' => 'Грешка током прављења коментара',
 	'commentbox-error-page-nonexistent' => 'Ова страница не постоји.',
 	'commentbox-error-namespace' => 'Коментари нису дозвољени у овом именском простору!',
