@@ -760,7 +760,7 @@ $messages['ksh'] = array(
 	'commentbox-desc' => 'Deiht ene Kaßte för Aanmerkunge op beschtemmpte Sigge derbei.',
 	'commentbox-intro' => '== Aanmerkung derbei donn ==
 Häß De en Aamerkung zoh heh dä Sigg? Donn se heh enjävve, udder <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} donn heh di Sigg ändere]</span>.',
-	'commentbox-savebutton' => 'Aanmerkung avshpeishere',
+	'commentbox-savebutton' => 'Aanmerkong avshpeishere',
 	'commentbox-name' => 'Name:',
 	'commentbox-name-explanation' => '<small>(Opjepaß: Wann De [[Special:UserLogin|enjelog beß]], moß De nit immer heh Dinge Name entippe)</small>',
 	'commentbox-log' => 'Neu Aanmerkonge',
