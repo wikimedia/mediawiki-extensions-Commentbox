@@ -547,13 +547,14 @@ $messages['he'] = array(
 
 /** Hindi (हिन्दी)
  * @author Ansumang
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
-	'commentbox-savebutton' => 'टीप्पणी बचाएं',
+	'commentbox-savebutton' => 'टीप्पणी सहेजें',
 	'commentbox-name' => 'नाम:',
 	'commentbox-log' => 'नई टिप्पणियाँ',
-	'commentbox-first-comment-heading' => '== टिप्पणियां ==',
-	'commentbox-regex' => '/\\n==\\s*टिप्पणियां\\s*==\\s*\\n/i',
+	'commentbox-first-comment-heading' => '== टिप्पणियाँ ==',
+	'commentbox-regex' => '/\\n==\\s*टिप्पणियाँ\\s*==\\s*\\n/i',
 	'commentbox-error-page-nonexistent' => 'यह पृष्ठ मौजूद नहीं है!',
 );
 
