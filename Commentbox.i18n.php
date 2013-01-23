@@ -1162,6 +1162,7 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'commentbox-desc' => "Aggiunge 'na sckatole de commende a certe pàggene",
 	'commentbox-savebutton' => "Reggistre 'u commende",
 	'commentbox-name' => 'Nome:',
 	'commentbox-log' => 'Commende nuève',
