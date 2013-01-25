@@ -737,6 +737,7 @@ $messages['kn'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
 	'commentbox-desc' => '특정 문서에 의견 상자를 추가',
@@ -748,7 +749,7 @@ $messages['ko'] = array(
 	'commentbox-log' => '새 의견',
 	'commentbox-first-comment-heading' => '== 의견 ==',
 	'commentbox-regex' => '/\\n==\\s*의견\\s*==\\s*\\n/i',
-	'commentbox-errorpage-title' => '의견을 남기는 도중 오류 발생',
+	'commentbox-errorpage-title' => '의견을 남기는 동안 오류',
 	'commentbox-error-page-nonexistent' => '이 문서가 존재하지 않습니다!',
 	'commentbox-error-namespace' => '이 이름공간에는 의견을 남길 수 없습니다!',
 	'commentbox-error-empty-comment' => '내용 없이 의견을 남길 수 없습니다!',
