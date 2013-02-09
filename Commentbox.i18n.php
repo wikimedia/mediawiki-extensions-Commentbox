@@ -328,6 +328,7 @@ Maš komentar na toś tom boku? Pśidaj jen sem abo <span class="plainlinks">[{{
 /** Greek (Ελληνικά)
  * @author Crazymadlover
  * @author Dada
+ * @author Glavkos
  * @author Omnipaedista
  * @author Περίεργος
  */
@@ -342,7 +343,7 @@ $messages['el'] = array(
 	'commentbox-regex' => '/\\n==\\s*Σχόλια\\s*==\\s*\\n/i',
 	'commentbox-errorpage-title' => 'Σφάλμα κατά τη δημιουργία σχολίου',
 	'commentbox-error-page-nonexistent' => 'Αυτή η σελίδα δεν υπάρχει!',
-	'commentbox-error-namespace' => 'Σχόλια δεν επιτρέπονται σε αυτόν τον ονοματικό χώρο!',
+	'commentbox-error-namespace' => 'Σχόλια δεν επιτρέπονται σε αυτόν τον ονοματοχώρο!',
 	'commentbox-error-empty-comment' => 'Κενά σχόλια δεν επιτρέπονται!',
 );
 
