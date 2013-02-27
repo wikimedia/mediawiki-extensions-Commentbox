@@ -1169,6 +1169,8 @@ $messages['roa-tara'] = array(
 	'commentbox-name' => 'Nome:',
 	'commentbox-log' => 'Commende nuève',
 	'commentbox-first-comment-heading' => '== Commende ==',
+	'commentbox-error-page-nonexistent' => "Sta pàgene non g'esiste!",
+	'commentbox-error-namespace' => "Le commende non ge sò permesse jndr'à stu namespace!",
 	'commentbox-error-empty-comment' => 'Le commende vacande non ge se ponne mettere!',
 );
 
