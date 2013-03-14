@@ -971,7 +971,7 @@ $messages['nl'] = array(
 	'commentbox-intro' => '== U kunt een opmerking toevoegen... ==
 Hebt u een opmerking over deze pagina?
 Voeg deze hier toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} bewerk deze pagina direct]</span>.',
-	'commentbox-savebutton' => 'Opmerking opslaan',
+	'commentbox-savebutton' => 'Reactie opslaan',
 	'commentbox-name' => 'Naam:',
 	'commentbox-name-explanation' => '<small>Tip: als u zich [[Special:UserLogin|aanmeld]], hoeft u uw naam hier niet in de voeren.</small>',
 	'commentbox-log' => 'Nieuwe opmerkingen',
