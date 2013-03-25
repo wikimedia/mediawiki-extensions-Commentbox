@@ -35,7 +35,11 @@ You have a comment on this page? Add it here or <span class="plainlinks">[{{full
 $messages['qqq'] = array(
 	'commentbox-desc' => '{{desc|name=Commentbox|url=http://www.mediawiki.org/wiki/Extension:Commentbox}}',
 	'commentbox-prefill' => '{{notranslate}}',
-	'commentbox-name' => '{{Identical|Name}}',
+	'commentbox-intro' => 'Used as intro text for the Comment form.',
+	'commentbox-savebutton' => 'Used as Submit button text in the Comment form.',
+	'commentbox-name' => 'Used as label for input box.
+{{Identical|Name}}',
+	'commentbox-name-explanation' => 'Used as explanation for the input box {{msg-mw|commentbox-name}}.',
 	'commentbox-log' => 'This message is used as Edit Summary when the user added a new comment.',
 	'commentbox-first-comment-heading' => '{{Identical|Comment}}',
 	'commentbox-regex' => 'Regular expression that should match {{msg-mw|commentbox-first-comment-heading}}
