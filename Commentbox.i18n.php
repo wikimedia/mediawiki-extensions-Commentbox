@@ -967,6 +967,17 @@ Har du en kommentar til denne siden? Legg den til her eller <span class="plainli
 	'commentbox-error-empty-comment' => 'Tomme kommentarer er ikke tillatt!',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'commentbox-savebutton' => 'Kommentar spiekern',
+	'commentbox-name' => 'Naam:',
+	'commentbox-log' => 'Nee Kommentaren',
+	'commentbox-first-comment-heading' => '== Kommentaren ==',
+	'commentbox-error-page-nonexistent' => 'De Sied gifft dat nicht!',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -1169,11 +1180,15 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'commentbox-desc' => "Aggiunge 'na sckatole de commende a certe pàggene",
+	'commentbox-intro' => "== Aggiunge 'nu commende... ==
+Tu è 'nu commende sus a sta pàgene? Aggiungile aqquà o <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} cange 'a pàgene direttamende]</span>.",
 	'commentbox-savebutton' => "Reggistre 'u commende",
 	'commentbox-name' => 'Nome:',
+	'commentbox-name-explanation' => "<small>(Conziglie: Ce tu [[Special:UserLogin|tràse]], non g'ha mettere 'u nome tue a màne)</small>",
 	'commentbox-log' => 'Commende nuève',
 	'commentbox-first-comment-heading' => '== Commende ==',
 	'commentbox-regex' => '/\\n==\\s*Commende\\s*==\\s*\\n/i',
+	'commentbox-errorpage-title' => "Errore mendre stoche a ccreje 'nu commende",
 	'commentbox-error-page-nonexistent' => "Sta pàgene non g'esiste!",
 	'commentbox-error-namespace' => "Le commende non ge sò permesse jndr'à stu namespace!",
 	'commentbox-error-empty-comment' => 'Le commende vacande non ge se ponne mettere!',
