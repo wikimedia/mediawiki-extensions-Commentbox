@@ -947,7 +947,7 @@ $messages['myv'] = array(
 	'commentbox-first-comment-heading' => '== Арсемат-мельть ==',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
  * @author Simny
  */
@@ -1008,7 +1008,7 @@ Voeg deze hier toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|actio
 	'commentbox-name-explanation' => '<small>Tip: als je je [[Special:UserLogin|aanmeld]], hoef je je naam hier niet in de voeren.</small>',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -1049,7 +1049,7 @@ Avètz un comentari sus aquesta pagina ? Apondètz-o aicí o <span class="plainl
 	'commentbox-error-empty-comment' => 'Los comentaris voids son pas autorizats !',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Jnanaranjan Sahu
  */
 $messages['or'] = array(
