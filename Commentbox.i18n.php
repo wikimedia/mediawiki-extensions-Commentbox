@@ -410,21 +410,25 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Alireza
  * @author Mjbmr
  * @author Reza1615
+ * @author Taha
  * @author پاناروما
  */
 $messages['fa'] = array(
 	'commentbox-desc' => 'افزودن جعبهٔ نظر برای تعدادی صفحه',
+	'commentbox-intro' => '= نظر دادن ==
+می‌خواهید در این صفحه نظر بدهید؟ نظرتان را در اینجا مطرح کنید یا <span class="plainlinks">[{{fullurl: {{FULLPAGENAME}} {|action = edit}} صفحه را به صورت مستقیم ویرایش کنید]</span>.', # Fuzzy
 	'commentbox-savebutton' => 'ذخیرهٔ نظر',
 	'commentbox-name' => 'نام:',
-	'commentbox-log' => 'نظر جدید',
+	'commentbox-log' => 'نظرات جدید',
 	'commentbox-first-comment-heading' => '== نظرها ==',
 	'commentbox-regex' => '/\\n==\\s*(نظرها|نظرات|نظر)\\s*==\\s*\\n/i',
 	'commentbox-errorpage-title' => 'خطا در حین ایجاد نظر',
 	'commentbox-error-page-nonexistent' => 'این صفحه وجود ندارد!',
 	'commentbox-error-namespace' => 'نظرات در این فضای نام مجاز نیست!',
-	'commentbox-error-empty-comment' => 'خالی‌کردن نظرات مجاز نیست!',
+	'commentbox-error-empty-comment' => 'نظرات بدون متن مجاز نیست!',
 );
 
 /** Finnish (suomi)
