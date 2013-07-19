@@ -857,6 +857,7 @@ $messages['lt'] = array(
 	'commentbox-first-comment-heading' => '== Komentarai ==',
 	'commentbox-errorpage-title' => 'Klaida kuriant komentarą',
 	'commentbox-error-page-nonexistent' => 'Puslapis neegzistuoja',
+	'commentbox-error-empty-comment' => 'Tušti komentarai neleidžiami!',
 );
 
 /** Latgalian (latgaļu)
