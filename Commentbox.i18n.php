@@ -261,6 +261,13 @@ $messages['cs'] = array(
 	'commentbox-error-empty-comment' => 'Prázdné komentáře nejsou povoleny.',
 );
 
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+ * @author ОйЛ
+ */
+$messages['cu'] = array(
+	'commentbox-name' => 'имѧ :',
+);
+
 /** Danish (dansk)
  * @author Tjernobyl
  */
