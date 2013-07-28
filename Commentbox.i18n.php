@@ -1144,11 +1144,12 @@ $messages['ps'] = array(
 /** Portuguese (português)
  * @author Hamilton Abreu
  * @author Indech
+ * @author Luckas
  */
 $messages['pt'] = array(
 	'commentbox-desc' => 'Inclui uma caixa de comentários em certas páginas',
 	'commentbox-intro' => '== Adicione um comentário... ==
-Tem um comentário acerca desta página? Adicione-o aqui ou <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} edite a página directamente]</span>.',
+Tem um comentário acerca desta página? Adicione-o aqui ou <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} edite a página diretamente]</span>.',
 	'commentbox-savebutton' => 'Gravar comentário',
 	'commentbox-name' => 'Nome:',
 	'commentbox-name-explanation' => '<small>(Dica: Se [[Special:UserLogin|se autenticar]], não terá de preencher o seu nome aqui manualmente)</small>',
