@@ -1021,7 +1021,7 @@ Voeg deze hier toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|actio
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
-	'commentbox-intro' => '== Je kunt een opmerking toevoegen... ==
+	'commentbox-intro' => '== Je kunt een reactie toevoegen... ==
 Heb je een opmerking over deze pagina?
 Voeg deze hier toe of <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} bewerk deze pagina direct]</span>.',
 	'commentbox-name-explanation' => '<small>Tip: als je je [[Special:UserLogin|aanmeld]], hoef je je naam hier niet in de voeren.</small>',
