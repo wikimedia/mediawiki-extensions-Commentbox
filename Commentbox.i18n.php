@@ -808,7 +808,7 @@ $messages['ku-latn'] = array(
 	'commentbox-error-page-nonexistent' => 'Ev rûpel tune ye!',
 );
 
-/** Kirghiz (Кыргызча)
+/** Kyrgyz (Кыргызча)
  * @author Growingup
  */
 $messages['ky'] = array(
