@@ -265,7 +265,7 @@ $messages['co'] = array(
 	'commentbox-name' => 'Nome:',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Chmee2
  */
 $messages['cs'] = array(
@@ -279,7 +279,7 @@ $messages['cs'] = array(
 	'commentbox-error-empty-comment' => 'Prázdné komentáře nejsou povoleny.',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
