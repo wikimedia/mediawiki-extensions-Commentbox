@@ -770,10 +770,13 @@ $messages['km'] = array(
 );
 
 /** Kannada (ಕನ್ನಡ)
+ * @author Dimension10
  * @author Nayvik
  */
 $messages['kn'] = array(
 	'commentbox-name' => 'ಹೆಸರು:',
+	'commentbox-first-comment-heading' => '== ಟಿಪ್ಪಣಿಗಳು ==',
+	'commentbox-regex' => '/\\n==\\s*ಟಿಪ್ಪಣಿಗಳು\\s*==\\s*\\n/i',
 );
 
 /** Korean (한국어)
@@ -835,11 +838,12 @@ $messages['ky'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
-	'commentbox-desc' => 'Setzt op bestëmmte Säiten eng Këscht fir Bemierkungen derbäi',
+	'commentbox-desc' => 'Setzt op bestëmmte Säiten eng Këscht fir Bemierkungen dobäi',
 	'commentbox-intro' => '== Eng Bemierkung derbäisetzen... ==
-Dir hutt eng Bemierkung zu dëser Säit? Setzt ze hei derbäi oder <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} ännert d\'Säit direkt]</span>.',
+Dir hutt eng Bemierkung zu dëser Säit? Setzt ze hei dobäi oder <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} ännert d\'Säit direkt]</span>.',
 	'commentbox-savebutton' => 'Bemierkung späicheren',
 	'commentbox-name' => 'Numm:',
 	'commentbox-name-explanation' => '<small>(Tip: Wann Dir [[Special:UserLogin|Iech umellt]], braucht Dir Ären Numm hei net manuell anzeginn)</small>',
