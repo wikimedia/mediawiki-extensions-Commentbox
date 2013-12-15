@@ -841,9 +841,9 @@ $messages['ky'] = array(
  * @author Soued031
  */
 $messages['lb'] = array(
-	'commentbox-desc' => 'Setzt op bestëmmte Säiten eng Këscht fir Bemierkungen dobäi',
+	'commentbox-desc' => 'Setzt op bestëmmte Säiten eng Këscht fir Bemierkungen derbäi',
 	'commentbox-intro' => '== Eng Bemierkung derbäisetzen... ==
-Dir hutt eng Bemierkung zu dëser Säit? Setzt ze hei dobäi oder <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} ännert d\'Säit direkt]</span>.',
+Dir hutt eng Bemierkung zu dëser Säit? Setzt ze hei derbäi oder <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} ännert d\'Säit direkt]</span>.',
 	'commentbox-savebutton' => 'Bemierkung späicheren',
 	'commentbox-name' => 'Numm:',
 	'commentbox-name-explanation' => '<small>(Tip: Wann Dir [[Special:UserLogin|Iech umellt]], braucht Dir Ären Numm hei net manuell anzeginn)</small>',
