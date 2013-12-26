@@ -436,6 +436,7 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Alireza
+ * @author Armin1392
  * @author Mjbmr
  * @author Reza1615
  * @author Taha
@@ -447,6 +448,7 @@ $messages['fa'] = array(
 می‌خواهید در این صفحه نظر بدهید؟ نظرتان را در اینجا مطرح کنید یا <span class="plainlinks">[{{fullurl: {{FULLPAGENAME}} {|action = edit}} صفحه را به صورت مستقیم ویرایش کنید]</span>.', # Fuzzy
 	'commentbox-savebutton' => 'ذخیرهٔ نظر',
 	'commentbox-name' => 'نام:',
+	'commentbox-name-explanation' => '<small>(نکته: اگر شما [[Special:UserLogin|log in]], نباید نام خود را دستی اینجا پر کنید)</small>',
 	'commentbox-log' => 'نظرات جدید',
 	'commentbox-first-comment-heading' => '== نظرها ==',
 	'commentbox-regex' => '/\\n==\\s*(نظرها|نظرات|نظر)\\s*==\\s*\\n/i',
