@@ -786,16 +786,16 @@ $messages['kn'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'commentbox-desc' => '특정 문서에 의견 상자를 추가',
+	'commentbox-desc' => '특정 문서에 의견 상자를 추가합니다',
 	'commentbox-intro' => '== 의견 남기기... ==
-이 문서에 의견이 있으신가요? 여기 의견을 남기시거나 <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} 문서를 직접 편집]</span>하십시오.',
-	'commentbox-savebutton' => '의견 저장하기',
+이 문서에 의견이 있나요? 여기에 의견을 추가하거나 <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} 문서를 직접 편집]</span>하세요.',
+	'commentbox-savebutton' => '의견 저장',
 	'commentbox-name' => '이름:',
 	'commentbox-name-explanation' => '<small>(팁: [[Special:UserLogin|로그인]]하면 이름을 직접 적지 않아도 됩니다.)</small>',
 	'commentbox-log' => '새 의견',
 	'commentbox-first-comment-heading' => '== 의견 ==',
 	'commentbox-regex' => '/\\n==\\s*의견\\s*==\\s*\\n/i',
-	'commentbox-errorpage-title' => '의견을 남기는 동안 오류',
+	'commentbox-errorpage-title' => '의견을 만드는 동안 오류',
 	'commentbox-error-page-nonexistent' => '이 문서가 존재하지 않습니다!',
 	'commentbox-error-namespace' => '이 이름공간에는 의견을 남길 수 없습니다!',
 	'commentbox-error-empty-comment' => '내용 없이 의견을 남길 수 없습니다!',
