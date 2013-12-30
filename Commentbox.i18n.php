@@ -445,7 +445,7 @@ $messages['eu'] = array(
 $messages['fa'] = array(
 	'commentbox-desc' => 'افزودن جعبهٔ نظر برای تعدادی صفحه',
 	'commentbox-intro' => '= نظر دادن ==
-می‌خواهید در این صفحه نظر بدهید؟ نظرتان را در اینجا مطرح کنید یا <span class="plainlinks">[{{fullurl: {{FULLPAGENAME}} {|action = edit}} صفحه را به صورت مستقیم ویرایش کنید]</span>.', # Fuzzy
+می‌خواهید در این صفحه نظر بدهید؟ نظرتان را در اینجا مطرح کنید یا <span class="plainlinks">[{{fullurl: {{FULLPAGENAME}} |action = edit}} صفحه را به صورت مستقیم ویرایش کنید]</span>.',
 	'commentbox-savebutton' => 'ذخیرهٔ نظر',
 	'commentbox-name' => 'نام:',
 	'commentbox-name-explanation' => '<small>(نکته: اگر شما [[Special:UserLogin|log in]], نباید نام خود را دستی اینجا پر کنید)</small>',
