@@ -74,7 +74,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$reqArr = array(
 			'wpTextbox1' => $text,
 			'wpSummary' => wfMsgForContent( 'commentbox-log' ),
-			'wpEditToken' => $wgUser->editToken(),
+			'wpEditToken' => $wgUser->getEditToken(),
 			'wpIgnoreBlankSummary' => '',
 			'wpStarttime' => wfTimestampNow(),
 			'wpEdittime' => $article->getTimestamp(),
