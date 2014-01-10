@@ -959,7 +959,7 @@ $messages['mr'] = array(
 	'commentbox-first-comment-heading' => '== टिप्पण्या ==',
 	'commentbox-regex' => '/\\n==\\s*टिप्पण्या\\s*==\\s*\\n/i',
 	'commentbox-errorpage-title' => 'टिप्पण्या तयार करतांना घडणाऱ्या त्रूटी',
-	'commentbox-error-page-nonexistent' => 'हे पान $1 अस्तीत्वात नाही!', # Fuzzy
+	'commentbox-error-page-nonexistent' => 'हे पान अस्तीत्वात नाही!',
 	'commentbox-error-namespace' => 'या नामविश्वात टिप्पण्या करण्यास परवानगी नाही!',
 	'commentbox-error-empty-comment' => 'रिकाम्या टिप्पण्यास परवानगी नाही!',
 );
