@@ -428,10 +428,14 @@ $messages['et'] = array(
 );
 
 /** Basque (euskara)
+ * @author Subi
  * @author පසිඳු කාවින්ද
  */
 $messages['eu'] = array(
 	'commentbox-name' => 'Izena:',
+	'commentbox-log' => 'Iruzkin berriak',
+	'commentbox-first-comment-heading' => '== Iruzkinak ==',
+	'commentbox-regex' => '/\\n==\\s*Iruzkinak\\s*==\\s*\\n/i',
 );
 
 /** Persian (فارسی)
