@@ -17,7 +17,7 @@ $wgExtensionCredits['other'][] = array(
 	'name'           => 'Commentbox',
 	'path'           => __FILE__,
 	'author'         => '[http://spiele.j-crew.de Thomas Bleher]',
-	'version'        => '0.2',
+	'version'        => '0.3.0',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Commentbox',
 	'descriptionmsg' => 'commentbox-desc',
 );
@@ -29,6 +29,7 @@ $wgCommentboxNamespaces = array (
 $wgCommentboxRows = 5;
 $wgCommentboxColumns = 80;
 
+$wgMessagesDirs['Commentbox'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Commentbox'] = dirname( __FILE__ ) . '/Commentbox.i18n.php';
 $wgSpecialPages['AddComment'] = 'SpecialAddComment';
 $wgAutoloadClasses['SpecialAddComment'] = dirname( __FILE__ ) . '/SpecialAddComment_body.php';

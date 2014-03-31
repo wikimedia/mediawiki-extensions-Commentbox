@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Erdemaslancan",
+            "Mirzali"
+        ]
+    },
+    "commentbox-savebutton": "Vatışi qeyd ke",
+    "commentbox-name": "Name:",
+    "commentbox-log": "Vatışê newey",
+    "commentbox-first-comment-heading": "== Vatışi ==",
+    "commentbox-regex": "/\\n==\\s*Vatışi\\s*==\\s*\\n/i",
+    "commentbox-error-page-nonexistent": "Ena per çıniya."
+}
