@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Roustammr",
-            "Ләйсән"
-        ]
-    },
-    "commentbox-name": "Исем:",
-    "commentbox-log": "Яңы аңлатмалар",
-    "commentbox-errorpage-title": "Аңлатма төҙөгәндә хата китте",
-    "commentbox-error-page-nonexistent": "Был бит юҡ!"
+	"@metadata": {
+		"authors": [
+			"Roustammr",
+			"Ләйсән"
+		]
+	},
+	"commentbox-name": "Исем:",
+	"commentbox-log": "Яңы аңлатмалар",
+	"commentbox-errorpage-title": "Аңлатма төҙөгәндә хата китте",
+	"commentbox-error-page-nonexistent": "Был бит юҡ!"
 }

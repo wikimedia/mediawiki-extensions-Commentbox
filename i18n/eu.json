@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Subi",
-            "පසිඳු කාවින්ද"
-        ]
-    },
-    "commentbox-name": "Izena:",
-    "commentbox-log": "Iruzkin berriak",
-    "commentbox-first-comment-heading": "== Iruzkinak ==",
-    "commentbox-regex": "/\\n==\\s*Iruzkinak\\s*==\\s*\\n/i"
+	"@metadata": {
+		"authors": [
+			"Subi",
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"commentbox-name": "Izena:",
+	"commentbox-log": "Iruzkin berriak",
+	"commentbox-first-comment-heading": "== Iruzkinak ==",
+	"commentbox-regex": "/\\n==\\s*Iruzkinak\\s*==\\s*\\n/i"
 }

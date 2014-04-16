@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dimension10",
-            "Nayvik"
-        ]
-    },
-    "commentbox-name": "ಹೆಸರು:",
-    "commentbox-first-comment-heading": "== ಟಿಪ್ಪಣಿಗಳು ==",
-    "commentbox-regex": "/\\n==\\s*ಟಿಪ್ಪಣಿಗಳು\\s*==\\s*\\n/i"
+	"@metadata": {
+		"authors": [
+			"Dimension10",
+			"Nayvik"
+		]
+	},
+	"commentbox-name": "ಹೆಸರು:",
+	"commentbox-first-comment-heading": "== ಟಿಪ್ಪಣಿಗಳು ==",
+	"commentbox-regex": "/\\n==\\s*ಟಿಪ್ಪಣಿಗಳು\\s*==\\s*\\n/i"
 }

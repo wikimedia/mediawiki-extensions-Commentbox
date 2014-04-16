@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Joachim Mos"
-        ]
-    },
-    "commentbox-savebutton": "Kommentar spiekern",
-    "commentbox-name": "Naam:",
-    "commentbox-log": "Nee Kommentaren",
-    "commentbox-first-comment-heading": "== Kommentaren ==",
-    "commentbox-error-page-nonexistent": "De Sied gifft dat nicht!"
+	"@metadata": {
+		"authors": [
+			"Joachim Mos"
+		]
+	},
+	"commentbox-savebutton": "Kommentar spiekern",
+	"commentbox-name": "Naam:",
+	"commentbox-log": "Nee Kommentaren",
+	"commentbox-first-comment-heading": "== Kommentaren ==",
+	"commentbox-error-page-nonexistent": "De Sied gifft dat nicht!"
 }

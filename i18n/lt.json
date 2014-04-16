@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Eitvys200"
-        ]
-    },
-    "commentbox-savebutton": "Išsaugoti komentarą",
-    "commentbox-name": "Pavadinimas:",
-    "commentbox-log": "Nauji komentarai",
-    "commentbox-first-comment-heading": "== Komentarai ==",
-    "commentbox-errorpage-title": "Klaida kuriant komentarą",
-    "commentbox-error-page-nonexistent": "Puslapis neegzistuoja",
-    "commentbox-error-empty-comment": "Tušti komentarai neleidžiami!"
+	"@metadata": {
+		"authors": [
+			"Eitvys200"
+		]
+	},
+	"commentbox-savebutton": "Išsaugoti komentarą",
+	"commentbox-name": "Pavadinimas:",
+	"commentbox-log": "Nauji komentarai",
+	"commentbox-first-comment-heading": "== Komentarai ==",
+	"commentbox-errorpage-title": "Klaida kuriant komentarą",
+	"commentbox-error-page-nonexistent": "Puslapis neegzistuoja",
+	"commentbox-error-empty-comment": "Tušti komentarai neleidžiami!"
 }
