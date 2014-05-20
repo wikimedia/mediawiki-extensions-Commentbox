@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"AnakngAraw"
+			"AnakngAraw",
+			"Jojit fb"
 		]
 	},
 	"commentbox-desc": "Nagdaragdag ng isang kahon ng kumento sa partikular na mga pahina",
 	"commentbox-intro": "== Magdagdag ng puna... ==\nMayroon kang kumento sa pahinang ito? Idagdag iyon dito o <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} tuwirang baguhin ang pahina]</span>.",
 	"commentbox-savebutton": "Sagipin ang puna",
 	"commentbox-name": "Pangalan:",
-	"commentbox-name-explanation": "<small>(Balato: Kapag [[Special:UserLogin|lumagda ka]], hindi mo kailangang kinakamay na ipasok ang pangalan mo rito)</small>",
+	"commentbox-name-explanation": "<small>(Tip: Kapag [[Special:UserLogin|nag-login ka]], hindi mo kailangang ipasok ang pangalan mo rito sa manwal na paraan)</small>",
 	"commentbox-log": "Bagong mga puna",
 	"commentbox-first-comment-heading": "== Mga puna ==",
 	"commentbox-regex": "\\n==\\s*Mga kumento\\s*==\\s*\\n/i",
