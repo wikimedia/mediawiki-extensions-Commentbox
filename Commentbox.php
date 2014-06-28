@@ -62,7 +62,7 @@ function wfExtensionCommentbox_Add( &$op, &$text ) {
 	if ( !is_null( $wgRequest->getVal( 'diff' ) ) )
 		return true;
 
-	$newaction = Title::newFromText( 'AddComment', NS_SPECIAL )->escapeFullURL();
+	$newaction = htmlspecialchars( Title::newFromText( 'AddComment', NS_SPECIAL )->getFullURL() );
 	$name = '';
 	if ( !$wgUser->isLoggedIn() ) {
 		$namecomment = wfMsgExt( 'commentbox-name-explanation', 'parseinline' );
