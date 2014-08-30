@@ -6,7 +6,8 @@
 			"Mjbmr",
 			"Reza1615",
 			"Taha",
-			"پاناروما"
+			"پاناروما",
+			"Alirezaaa"
 		]
 	},
 	"commentbox-desc": "افزودن جعبهٔ نظر برای تعدادی صفحه",
@@ -14,7 +15,7 @@
 	"commentbox-savebutton": "ذخیرهٔ نظر",
 	"commentbox-name": "نام:",
 	"commentbox-name-explanation": "<small>(نکته: اگر شما [[Special:UserLogin|log in]], نباید نام خود را دستی اینجا پر کنید)</small>",
-	"commentbox-log": "نظرات جدید",
+	"commentbox-log": "نظرات تازه",
 	"commentbox-first-comment-heading": "== نظرها ==",
 	"commentbox-regex": "/\\n==\\s*(نظرها|نظرات|نظر)\\s*==\\s*\\n/i",
 	"commentbox-errorpage-title": "خطا در حین ایجاد نظر",
