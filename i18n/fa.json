@@ -7,11 +7,12 @@
 			"Reza1615",
 			"Taha",
 			"پاناروما",
-			"Alirezaaa"
+			"Alirezaaa",
+			"MohandesWiki"
 		]
 	},
 	"commentbox-desc": "افزودن جعبهٔ نظر برای تعدادی صفحه",
-	"commentbox-intro": "= نظر دادن ==\nمی‌خواهید در این صفحه نظر بدهید؟ نظرتان را در اینجا مطرح کنید یا <span class=\"plainlinks\">[{{fullurl: {{FULLPAGENAME}} |action = edit}} صفحه را به صورت مستقیم ویرایش کنید]</span>.",
+	"commentbox-intro": "==... نظر ==\nیک نظر در این صفحه دارید؟ اضافه کردن آن را در اینجا و یا <span class=\"plainlinks\">[{{fullurl :{{FULLPAGENAME}} {|action = edit}} صفحه به ویرایش مستقیم]</span>.",
 	"commentbox-savebutton": "ذخیرهٔ نظر",
 	"commentbox-name": "نام:",
 	"commentbox-name-explanation": "<small>(نکته: اگر شما [[Special:UserLogin|log in]], نباید نام خود را دستی اینجا پر کنید)</small>",
