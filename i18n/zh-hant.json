@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mark85296341"
+			"Mark85296341",
+			"LNDDYL"
 		]
 	},
 	"commentbox-desc": "於特定頁面添加註釋框",
@@ -14,6 +15,6 @@
 	"commentbox-regex": "/\\n==\\s*注釋\\s*==\\s*\\n/i",
 	"commentbox-errorpage-title": "創建注釋時出錯",
 	"commentbox-error-page-nonexistent": "該頁面不存在！",
-	"commentbox-error-namespace": "此名字空間禁止使用評論！",
+	"commentbox-error-namespace": "此命名空間禁止使用評論！",
 	"commentbox-error-empty-comment": "不允許使用空注釋 ！"
 }
