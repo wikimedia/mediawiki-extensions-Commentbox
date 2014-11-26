@@ -5,7 +5,7 @@
 		]
 	},
 	"commentbox-desc": "Додава поле за коментар на извесни страници",
-	"commentbox-intro": "== Додајте коментар... ==\nИмате коментар за оваа страница? Пишете го тука или пак <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} директно уредете ја страницата]</span>.",
+	"commentbox-intro": "== Додајте коментар... ==\nИмате коментар за оваа страница? Пишете го тука или пак <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} непосредно уредете ја страницата]</span>.",
 	"commentbox-savebutton": "Зачувај коментар",
 	"commentbox-name": "Име:",
 	"commentbox-name-explanation": "<small>(Помош: Ако [[Special:UserLogin|се најавите]], нема да треба тука да си го внесувате името рачно)</small>",
