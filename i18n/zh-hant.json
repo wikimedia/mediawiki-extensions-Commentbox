@@ -13,7 +13,7 @@
 	"commentbox-log": "新評論",
 	"commentbox-first-comment-heading": "== 注釋 ==",
 	"commentbox-regex": "/\\n==\\s*注釋\\s*==\\s*\\n/i",
-	"commentbox-errorpage-title": "創建注釋時出錯",
+	"commentbox-errorpage-title": "建立注釋時出錯",
 	"commentbox-error-page-nonexistent": "該頁面不存在！",
 	"commentbox-error-namespace": "此命名空間禁止使用評論！",
 	"commentbox-error-empty-comment": "不允許使用空注釋 ！"
