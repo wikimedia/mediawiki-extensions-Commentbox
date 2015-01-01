@@ -65,17 +65,17 @@ function wfExtensionCommentbox_Add( &$op, &$text ) {
 	$newaction = htmlspecialchars( Title::newFromText( 'AddComment', NS_SPECIAL )->getFullURL() );
 	$name = '';
 	if ( !$wgUser->isLoggedIn() ) {
-		$namecomment = wfMsgExt( 'commentbox-name-explanation', 'parseinline' );
-		$namelabel = wfMsgExt( 'commentbox-name', 'parseinline' );
+		$namecomment = $op->msg( 'commentbox-name-explanation' )->parse();
+		$namelabel = $op->msg( 'commentbox-name')->parse();
 		$name = '<br />' . $namelabel;
 		$name .= ' <input name="wpAuthor" tabindex="2" type="text" size="30" maxlength="50" /> ';
 		$name .= $namecomment;
 	}
-	$inhalt = wfMsgNoTrans( 'commentbox-prefill' );
-	$save = wfMsgExt( 'commentbox-savebutton', 'escapenoentities' );
+	$inhalt = $op->msg( 'commentbox-prefill' )->plain();
+	$save = $op->msg( 'commentbox-savebutton' )->parse();
 	$texttitle = htmlspecialchars( Title::makeName( $title->getNamespace(), $title->getText() ) );
 
-	$intro = wfMsgExt( 'commentbox-intro', 'parse' );
+	$intro = $op->msg( 'commentbox-intro' )->parse();
 
 	$text .= <<<END
 	<form id="commentform" name="commentform" method="post"

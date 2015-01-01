@@ -36,7 +36,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			return;
 		}
 
-		if ( $Comment == '' || $Comment == wfMsgNoTrans( 'commentbox-prefill' ) ) {
+		if ( $Comment == '' || $Comment == $this->msg( 'commentbox-prefill' )->plain() ) {
 			$this->fail( 'commentbox-error-empty-comment', $title );
 			return;
 		}
@@ -51,7 +51,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$matches = array();
 		if ( preg_match( '@https?://[-.\w]+@', $Comment, $matches ) ||
 		    preg_match( '@https?://[-.\w]+@', $Author, $matches ) ) {
-			$wgOut->setPageTitle( wfMsg( 'spamprotectiontitle' ) );
+			$wgOut->setPageTitle( $this->msg( 'spamprotectiontitle' ) );
 			$wgOut->setRobotPolicy( 'noindex,nofollow' );
 			$wgOut->setArticleRelated( false );
 
@@ -64,8 +64,8 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$article = new Article( $title );
 		$text = $article->getContent();
 		$subject = '';
-		if ( !preg_match( wfMsgForContentNoTrans( 'commentbox-regex' ), $text ) )
-			$subject = wfMsgForContent( 'commentbox-first-comment-heading' ) . "\n";
+		if ( !preg_match( $this->msg( 'commentbox-regex' )->inContentLanguage()->plain(), $text ) )
+			$subject = $this->msg( 'commentbox-first-comment-heading' )->inContentLanguage()->text() . "\n";
 		$sig = $wgUser->isLoggedIn() ? "-- ~~~~" : "-- $Author ~~~~~";
 		// Append <br /> after each newline, except if the user started a new paragraph
 		$Comment = preg_replace( '/(?<!\n)\n(?!\n)/', "<br />\n", $Comment );
@@ -73,7 +73,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 
 		$reqArr = array(
 			'wpTextbox1' => $text,
-			'wpSummary' => wfMsgForContent( 'commentbox-log' ),
+			'wpSummary' => $this->msg( 'commentbox-log' )->inContentLanguage()->text(),
 			'wpEditToken' => $wgUser->getEditToken(),
 			'wpIgnoreBlankSummary' => '',
 			'wpStarttime' => wfTimestampNow(),
@@ -108,7 +108,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 
 	function fail( $str, $title = null ) {
 		global $wgOut;
-		$wgOut->setPageTitle( wfMsg( 'commentbox-errorpage-title' ) );
+		$wgOut->setPageTitle( $this->msg( 'commentbox-errorpage-title' )->text() );
 		$wgOut->wrapWikiMsg( "<div class='errorbox'>$1</div><br clear='both' />", $str );
 		if ( $title != null )
 			$wgOut->returnToMain( false, $title );
