@@ -8,7 +8,7 @@
 			"Umherirrender"
 		]
 	},
-	"commentbox-desc": "{{desc|name=Commentbox|url=http://www.mediawiki.org/wiki/Extension:Commentbox}}",
+	"commentbox-desc": "{{desc|name=Commentbox|url=https://www.mediawiki.org/wiki/Extension:Commentbox}}",
 	"commentbox-prefill": "{{notranslate}}",
 	"commentbox-intro": "Used as intro text for the Comment form.",
 	"commentbox-savebutton": "Used as Submit button text in the Comment form.",
