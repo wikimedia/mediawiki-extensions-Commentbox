@@ -8,7 +8,7 @@
 	"commentbox-savebutton": "Vatışi qeyd ke",
 	"commentbox-name": "Name:",
 	"commentbox-log": "Mışewreyê neweyi",
-	"commentbox-first-comment-heading": "== Vatışi ==",
-	"commentbox-regex": "/\\n==\\s*Vatışi\\s*==\\s*\\n/i",
+	"commentbox-first-comment-heading": "== Mışewreyi ==",
+	"commentbox-regex": "/\\n==\\s*Mışewreyi\\s*==\\s*\\n/i",
 	"commentbox-error-page-nonexistent": "Ena per çıniya."
 }
