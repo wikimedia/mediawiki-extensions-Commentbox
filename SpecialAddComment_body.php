@@ -14,7 +14,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 	}
 
 	public function execute( $par ) {
-		global $wgUser, $wgRequest, $wgOut, $wgCommentboxNamespaces;
+		global $wgRequest, $wgOut, $wgCommentboxNamespaces;
 		if ( !$wgRequest->wasPosted() ) {
 			$wgOut->redirect( Title::newMainPage()->getFullURL() );
 			return;
@@ -61,12 +61,13 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			return;
 		}
 
+		$user = $this->getUser();
 		$article = new Article( $title );
 		$text = $article->getContent();
 		$subject = '';
 		if ( !preg_match( $this->msg( 'commentbox-regex' )->inContentLanguage()->plain(), $text ) )
 			$subject = $this->msg( 'commentbox-first-comment-heading' )->inContentLanguage()->text() . "\n";
-		$sig = $wgUser->isLoggedIn() ? "-- ~~~~" : "-- $Author ~~~~~";
+		$sig = $user->isLoggedIn() ? "-- ~~~~" : "-- $Author ~~~~~";
 		// Append <br /> after each newline, except if the user started a new paragraph
 		$Comment = preg_replace( '/(?<!\n)\n(?!\n)/', "<br />\n", $Comment );
 		$text .= "\n\n" . $subject . $Comment . "\n<br />" . $sig;
@@ -74,7 +75,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$reqArr = array(
 			'wpTextbox1' => $text,
 			'wpSummary' => $this->msg( 'commentbox-log' )->inContentLanguage()->text(),
-			'wpEditToken' => $wgUser->getEditToken(),
+			'wpEditToken' => $user->getEditToken(),
 			'wpIgnoreBlankSummary' => '',
 			'wpStarttime' => wfTimestampNow(),
 			'wpEdittime' => $article->getTimestamp(),
@@ -95,12 +96,10 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			$ep->spamPageWithContent( $details['spam'] );
 			break;
 		case EditPage::AS_BLOCKED_PAGE_FOR_USER:
-			$wgOut->blockedPage();
-			break;
+			throw new UserBlockedError( $user->getBlock() );
 		case EditPage::AS_READ_ONLY_PAGE_ANON:
 		case EditPage::AS_READ_ONLY_PAGE_LOGGED:
 			throw new PermissionsError( 'edit' );
-			break;
 		case EditPage::AS_READ_ONLY_PAGE:
 			$wgOut->readOnlyPage();
 		}
