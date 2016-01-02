@@ -99,7 +99,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			break;
 		case EditPage::AS_READ_ONLY_PAGE_ANON:
 		case EditPage::AS_READ_ONLY_PAGE_LOGGED:
-			$wgOut->permissionRequired( 'edit' );
+			throw new PermissionsError( 'edit' );
 			break;
 		case EditPage::AS_READ_ONLY_PAGE:
 			$wgOut->readOnlyPage();
