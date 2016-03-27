@@ -3,13 +3,14 @@
 		"authors": [
 			"Roustammr",
 			"Ләйсән",
-			"Sagan"
+			"Sagan",
+			"Азат Хәлилов"
 		]
 	},
 	"commentbox-desc": "Биткә комментарий ҡумтаһы өҫтәй",
 	"commentbox-savebutton": "Комментарийҙы һаҡларға",
 	"commentbox-name": "Исем:",
-	"commentbox-name-explanation": "<small>(Ярҙам. Әгәр һеҙ [[Special:UserLogin|системала танылһағыҙ]], исемегеҙҙе ҡулдар яҙырға тура кисмәйәсәк)</small>",
+	"commentbox-name-explanation": "<small>(Ярҙам. Әгәр һеҙ [[Special:UserLogin|системала танылһағыҙ]], исемегеҙҙе ҡулдан яҙырға тура кисмәйәсәк)</small>",
 	"commentbox-log": "Яңы аңлатмалар",
 	"commentbox-first-comment-heading": "== Комментарийҙар ==",
 	"commentbox-regex": "/\\n==\\s*Комментарий\\s*==\\s*\\n/i",
