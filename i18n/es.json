@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Crazymadlover",
-			"Fitoschido"
+			"Fitoschido",
+			"Tusca"
 		]
 	},
 	"commentbox-desc": "Agrega un cuadro de comentarios a ciertas páginas",
@@ -11,7 +12,7 @@
 	"commentbox-name": "Nombre:",
 	"commentbox-name-explanation": "<small>(Consejo: si [[Special:UserLogin|accedes a tu cuenta]] no tendrás que escribir tu nombre manualmente)</small>",
 	"commentbox-log": "Nuevos comentarios",
-	"commentbox-first-comment-heading": "== Comentarios==",
+	"commentbox-first-comment-heading": "== Comentarios ==",
 	"commentbox-regex": "/\\n==\\s*Comentarios\\s*==\\s*\\n/i",
 	"commentbox-errorpage-title": "Error al crear el comentario",
 	"commentbox-error-page-nonexistent": "¡Esta página no existe!",
