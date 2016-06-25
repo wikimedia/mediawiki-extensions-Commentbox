@@ -3,11 +3,12 @@
 		"authors": [
 			"Crazymadlover",
 			"Fitoschido",
-			"Tusca"
+			"Tusca",
+			"Macofe"
 		]
 	},
 	"commentbox-desc": "Agrega un cuadro de comentarios a ciertas páginas",
-	"commentbox-intro": "== Agregar un comentario... ==\nTienes un comentario a esta página? Agrégalo aquí o <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} edita la página directamente]</span>.",
+	"commentbox-intro": "== Agregar un comentario... ==\n¿Tienes un comentario sobre esta página? Agrégalo aquí o <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} edita la página directamente]</span>.",
 	"commentbox-savebutton": "Guardar comentario",
 	"commentbox-name": "Nombre:",
 	"commentbox-name-explanation": "<small>(Consejo: si [[Special:UserLogin|accedes a tu cuenta]] no tendrás que escribir tu nombre manualmente)</small>",
