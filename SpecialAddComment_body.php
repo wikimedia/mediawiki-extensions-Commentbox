@@ -62,8 +62,8 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		}
 
 		$user = $this->getUser();
-		$article = new Article( $title );
-		$text = $article->getContent();
+		$page = WikiPage::factory( $title );
+		$text = ContentHandler::getContentText( $page->getContent() );
 		$subject = '';
 		if ( !preg_match( $this->msg( 'commentbox-regex' )->inContentLanguage()->plain(), $text ) )
 			$subject = $this->msg( 'commentbox-first-comment-heading' )->inContentLanguage()->text() . "\n";
@@ -115,4 +115,3 @@ class SpecialAddComment extends UnlistedSpecialPage {
 	}
 
 }
-
