@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Erdemaslancan",
-			"Mirzali"
+			"Mirzali",
+			"Gırd"
 		]
 	},
 	"commentbox-savebutton": "Vatışi qeyd ke",
 	"commentbox-name": "Name:",
-	"commentbox-log": "Mışewreyê neweyi",
+	"commentbox-log": "Vatışê newey",
 	"commentbox-first-comment-heading": "== Mışewreyi ==",
 	"commentbox-regex": "/\\n==\\s*Mışewreyi\\s*==\\s*\\n/i",
 	"commentbox-error-page-nonexistent": "Ena per çıniya."
