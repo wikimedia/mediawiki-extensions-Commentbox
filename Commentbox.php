@@ -31,6 +31,7 @@ $wgCommentboxColumns = 80;
 
 $wgMessagesDirs['Commentbox'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Commentbox'] = dirname( __FILE__ ) . '/Commentbox.i18n.php';
+$wgExtensionMessagesFiles['CommentboxAlias'] = dirname( __FILE__ ) . '/Commentbox.alias.php';
 $wgSpecialPages['AddComment'] = 'SpecialAddComment';
 $wgAutoloadClasses['SpecialAddComment'] = dirname( __FILE__ ) . '/SpecialAddComment_body.php';
 $wgHooks['OutputPageBeforeHTML'][] = 'wfExtensionCommentbox_Add';
