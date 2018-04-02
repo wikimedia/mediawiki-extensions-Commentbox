@@ -4,11 +4,12 @@
 			"PhiLiP",
 			"Sweeite012f",
 			"Xiaomingyan",
-			"阿pp"
+			"阿pp",
+			"Liuxinyu970226"
 		]
 	},
 	"commentbox-desc": "于特定页面添加注释框",
-	"commentbox-intro": "添加评论\n是否对此页内容有意见？请将意见添加在此或\n直接修改此页",
+	"commentbox-intro": "== 添加评论... ==\n您对此页有意见么？请在此添加，或<span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} 直接编辑页面]</span>。",
 	"commentbox-savebutton": "保存注释",
 	"commentbox-name": "名称：",
 	"commentbox-name-explanation": "<small>(提示：[[Special:UserLogin|登入]]后不需要手动填写姓名)</small>",
