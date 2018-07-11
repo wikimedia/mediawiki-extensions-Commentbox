@@ -114,6 +114,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			'wpIgnoreBlankSummary' => '',
 			'wpStarttime' => wfTimestampNow(),
 			'wpEdittime' => $page->getTimestamp(),
+			'editRevId' => $page->getRevisionRecord()->getId(),
 			'wpUnicodeCheck' => $this->getRequest()->getText( 'wpUnicodeCheck' ),
 		];
 		$request = new FauxRequest( $reqArr, true );
