@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Rancher",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"BadDog"
 		]
 	},
 	"commentbox-desc": "Додаје кутијице за коментаре на извесне стране",
-	"commentbox-intro": "== Додавање коментара... ==\nДа ли желите да коментаришете ову страну? Додајте Ваш коментар или <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} измените страну директно]</span>.",
+	"commentbox-intro": "== Додавање коментара... ==\nИмате коментар о овој страници? Додајте га или <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} уредите страницу директно]</span>.",
 	"commentbox-savebutton": "Сними коментар",
 	"commentbox-name": "Име:",
 	"commentbox-log": "Нови коментари",
