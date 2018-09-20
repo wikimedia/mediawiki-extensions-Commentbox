@@ -5,18 +5,17 @@
  * @file
  * @ingroup Extensions
  */
-// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
-
-/** Bosnian (bosanski) */
-$specialPageAliases['bs'] = array(
-	'AddComment' => array( 'DodajKomentar' ),
-);
 
 /** English (English) */
 $specialPageAliases['en'] = array(
 	'AddComment' => array( 'AddComment' ),
+);
+
+/** Bosnian (bosanski) */
+$specialPageAliases['bs'] = array(
+	'AddComment' => array( 'DodajKomentar' ),
 );
 
 /** Croatian (hrvatski) */
