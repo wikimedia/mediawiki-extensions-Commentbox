@@ -7,7 +7,7 @@
 	},
 	"commentbox-desc": "يضيف صندوق تعليق لصفحات معينة",
 	"commentbox-intro": "== أضف تعليقا... ==\nلديك تعليق على هذه الصفحة؟ أضفه هنا أو <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} عدل الصفحة مباشرة]</span>.",
-	"commentbox-savebutton": "احفظ التعليق",
+	"commentbox-savebutton": "حفظ التعليق",
 	"commentbox-name": "الاسم:",
 	"commentbox-name-explanation": "<small>(نصيحة: لو أنك [[Special:UserLogin|ستسجل الدخول]]، فلن تحتاج إلى ملأ اسمك هنا يدويا)</small>",
 	"commentbox-log": "تعليقات جديدة",
