@@ -5,7 +5,7 @@
  * @file
  * @ingroup Extensions
  *
- * @link http://www.mediawiki.org/wiki/Extension:Commentbox Documentation
+ * @link https://www.mediawiki.org/wiki/Extension:Commentbox Documentation
  *
  *
  * @author Thomas Bleher <ThomasBleher@gmx.de>
