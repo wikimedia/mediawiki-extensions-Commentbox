@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yekrats"
+			"Yekrats",
+			"Mirin"
 		]
 	},
+	"commentbox-desc": "Aldonas komentskatolon al iuj paĝoj",
 	"commentbox-intro": "== Aldoni komenton... ==\nĈu vi havas komenton por ĉi tiu paĝo? Aldonu ĝin aŭ <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} redakti la paĝon rekte]</span>",
 	"commentbox-savebutton": "Konservi komenton",
 	"commentbox-name": "Nomo:",
+	"commentbox-name-explanation": "<small>(Konsileto: Se vi [[Special:UserLogin|ensalutas]], vi ne devas ĉiufoje enigi vian nomon ĉi tie)</small>",
 	"commentbox-log": "Novaj komentoj",
 	"commentbox-first-comment-heading": "== Komentoj ==",
 	"commentbox-regex": "/\\n==\\s*Komentoj\\s*==\\s*\\n/i",
