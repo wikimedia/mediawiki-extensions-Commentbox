@@ -6,8 +6,6 @@
  * @ingroup Extensions
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) die();
-
 class SpecialAddComment extends UnlistedSpecialPage {
 	public function __construct() {
 		parent::__construct( 'AddComment', 'edit' );
