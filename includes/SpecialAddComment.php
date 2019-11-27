@@ -1,4 +1,17 @@
 <?php
+
+namespace MediaWiki\Extension\Commentbox;
+
+use ContentHandler;
+use EditPage;
+use FauxRequest;
+use PermissionsError;
+use ReadOnlyError;
+use Title;
+use UnlistedSpecialPage;
+use UserBlockedError;
+use WikiPage;
+
 /**
  * Specialpage for the Commentbox extension.
  *
