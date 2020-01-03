@@ -36,7 +36,7 @@ $wgAutoloadClasses['SpecialAddComment'] = dirname( __FILE__ ) . '/SpecialAddComm
 $wgHooks['OutputPageBeforeHTML'][] = 'wfExtensionCommentbox_Add';
 
 function wfExtensionCommentbox_Add( &$op, &$text ) {
-	global $wgUser, $wgRequest,
+	global $wgRequest,
 	       $wgCommentboxNamespaces, $wgCommentboxRows,
 	       $wgCommentboxColumns;
 
@@ -64,7 +64,7 @@ function wfExtensionCommentbox_Add( &$op, &$text ) {
 
 	$newaction = htmlspecialchars( Title::newFromText( 'AddComment', NS_SPECIAL )->getFullURL() );
 	$name = '';
-	if ( !$wgUser->isLoggedIn() ) {
+	if ( !$op->getUser()->isLoggedIn() ) {
 		$namecomment = $op->msg( 'commentbox-name-explanation' )->parse();
 		$namelabel = $op->msg( 'commentbox-name')->parse();
 		$name = '<br />' . $namelabel;
