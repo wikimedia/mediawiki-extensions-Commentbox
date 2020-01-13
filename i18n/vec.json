@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Candalua",
-			"Vajotwo"
+			"Vajotwo",
+			"Conky77"
 		]
 	},
-	"commentbox-intro": "== Zonta on comento ... ==\nGheto comenti so sta paxena? Zonta qui o <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} modifega diretamente a paxena]</span>.",
+	"commentbox-intro": "== Xonta on comento ... ==\nGheto comenti so sta pàgina? Xonta qui o <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} modifega diretamente a pàgina]</span>.",
 	"commentbox-savebutton": "Salva comento",
 	"commentbox-name": "Nome:",
 	"commentbox-name-explanation": "<small>(Sujerimento: Se se [[Special:UserLogin|effetua l'acesso]], non se deve inserire manualmente qui el proprio nome)</small>",
