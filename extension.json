@@ -6,7 +6,7 @@
 	"descriptionmsg": "commentbox-desc",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.31.0"
 	},
 	"SpecialPages": {
 		"AddComment": "\\MediaWiki\\Extension\\Commentbox\\SpecialAddComment"
