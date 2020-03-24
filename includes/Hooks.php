@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\Commentbox;
 
+use MediaWiki\MediaWikiServices;
 use OutputPage;
 use Title;
 
@@ -26,8 +27,19 @@ class Hooks {
 		if ( !$title->exists() )
 			return true;
 
-		if ( !$title->userCan( 'edit', true ) )
-			return true;
+		if ( class_exists( 'MediaWiki\Permissions\PermissionManager' ) ) {
+			// MW 1.33+
+			if ( !MediaWikiServices::getInstance()
+				->getPermissionManager()
+				->userCan( 'edit', $op->getUser(), $title )
+			) {
+				return true;
+			}
+		} else {
+			if ( !$title->userCan( 'edit', true ) )
+				return true;
+		}
+
 		if ( !array_key_exists( $title->getNamespace(), $wgCommentboxNamespaces )
 			|| !$wgCommentboxNamespaces[ $title->getNamespace() ] )
 			return true;

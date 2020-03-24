@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\Commentbox;
 use ContentHandler;
 use EditPage;
 use FauxRequest;
+use MediaWiki\MediaWikiServices;
 use PermissionsError;
 use ReadOnlyError;
 use Title;
@@ -52,9 +53,20 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			return;
 		}
 
-		if ( !$title->userCan( 'edit' ) ) {
-			$this->displayRestrictionError();
-			return;
+		if ( class_exists( 'MediaWiki\Permissions\PermissionManager' ) ) {
+			// MW 1.33+
+			if ( !MediaWikiServices::getInstance()
+				->getPermissionManager()
+				->userCan( 'edit', $this->getUser(), $title )
+			) {
+				$this->displayRestrictionError();
+				return;
+			}
+		} else {
+			if ( !$title->userCan( 'edit' ) ) {
+				$this->displayRestrictionError();
+				return;
+			}
 		}
 
 		// TODO: Integrate with SpamBlacklist etc.
