@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"V.narsikar"
+			"V.narsikar",
+			"ज्ञानदा गद्रे-फडके"
 		]
 	},
 	"commentbox-desc": "काही पानांवर टिप्पणीपेटी जोडते",
-	"commentbox-intro": "== टिप्पणी जोडा... ==\nआपल्यापाशी काय या पानासाठी टिप्प्णण्या आहेत?त्या येथे जोडा किंवा<span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} या पानाचे थेट संपादन करा]</span>",
+	"commentbox-intro": "== टिप्पणी जोडा... ==\nआपल्यापाशी काय या पानासाठी टिप्पण्या आहेत?त्या येथे जोडा किंवा<span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} या पानाचे थेट संपादन करा]</span>",
 	"commentbox-savebutton": "टिप्पणी जतन करा",
 	"commentbox-name": "नाव:",
 	"commentbox-name-explanation": "<small>(सूचना: जर आपण [[Special:UserLogin|सनोंद प्रवेश केला]] तर, आपणास आपले नांव स्वतः येथे टाकावे लागणार नाही)</small>",
