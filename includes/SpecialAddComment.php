@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\Commentbox;
 
+use Article;
 use ContentHandler;
 use EditPage;
 use FauxRequest;
@@ -101,10 +102,10 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			'wpEditToken' => $user->getEditToken(),
 			'wpIgnoreBlankSummary' => '',
 			'wpStarttime' => wfTimestampNow(),
-			'wpEdittime' => $article->getTimestamp(),
+			'wpEdittime' => $page->getTimestamp(),
 		);
 		$request = new FauxRequest( $reqArr, true );
-		$ep = new EditPage( $article );
+		$ep = new EditPage( Article::newFromWikiPage( $page, $this->getContext() ) );
 		$ep->setContextTitle( $title );
 		$ep->importFormData( $request );
 		$details = array(); // Passed by ref
@@ -125,6 +126,8 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			throw new PermissionsError( 'edit' );
 		case EditPage::AS_READ_ONLY_PAGE:
 			throw new ReadOnlyError;
+		default:
+			$this->fail( $status->getMessage(), $title );
 		}
 	}
 
