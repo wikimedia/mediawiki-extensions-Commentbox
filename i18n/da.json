@@ -9,5 +9,6 @@
 	"commentbox-name": "Navn:",
 	"commentbox-log": "Nye kommentarer",
 	"commentbox-first-comment-heading": "== Kommentarer ==",
-	"commentbox-error-page-nonexistent": "Denne side findes ikke!"
+	"commentbox-error-page-nonexistent": "Denne side findes ikke!",
+	"commentbox-error-empty-comment": "Tomme kommentarer er ikke tilladte!"
 }
