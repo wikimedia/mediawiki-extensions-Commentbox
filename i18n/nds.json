@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Joachim Mos"
+			"Joachim Mos",
+			"Slomox"
 		]
 	},
 	"commentbox-savebutton": "Kommentar spiekern",
 	"commentbox-name": "Naam:",
 	"commentbox-log": "Nee Kommentaren",
 	"commentbox-first-comment-heading": "== Kommentaren ==",
-	"commentbox-error-page-nonexistent": "De Sied gifft dat nicht!"
+	"commentbox-error-page-nonexistent": "De Siet gifft dat nicht!"
 }
