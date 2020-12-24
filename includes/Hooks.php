@@ -2,6 +2,8 @@
 
 namespace MediaWiki\Extension\Commentbox;
 
+use EditPage;
+use Html;
 use MediaWiki\MediaWikiServices;
 use OutputPage;
 use Title;
@@ -56,7 +58,6 @@ class Hooks {
 		if ( !is_null( $wgRequest->getVal( 'diff' ) ) )
 			return true;
 
-		$newaction = htmlspecialchars( Title::newFromText( 'AddComment', NS_SPECIAL )->getFullURL() );
 		$name = '';
 		if ( !$op->getUser()->isLoggedIn() ) {
 			$namecomment = $op->msg( 'commentbox-name-explanation' )->parse();
@@ -69,22 +70,31 @@ class Hooks {
 		$save = $op->msg( 'commentbox-savebutton' )->parse();
 		$texttitle = htmlspecialchars( Title::makeName( $title->getNamespace(), $title->getText() ) );
 
-		$intro = $op->msg( 'commentbox-intro' )->parse();
-
-		$text .= <<<END
-	<form id="commentform" name="commentform" method="post"
-              action="$newaction" enctype="multipart/form-data">
-	$intro
-	<textarea tabindex='1' accesskey="," name="wpComment" id="wpComment"
-	          rows='$wgCommentboxRows' cols='$wgCommentboxColumns'
-		  >$inhalt</textarea>
-	$name
-	<br />
-	<input type="hidden" name="wpPageName" value="$texttitle" />
-	<input id="wpSave" name="wpSave" type="submit" tabindex="3" value="$save"
-	       accesskey="s" title="$save [alt-s]" />
-	</form>
-END;
+		$textarea = Html::element( 'textarea', [
+			'accesskey' => ',',
+			'name' => 'wpComment',
+			'id' => 'wpComment',
+			'rows' => $wgCommentboxRows,
+			'cols' => $wgCommentboxColumns,
+		], $inhalt );
+		$saveButton = Html::submitButton(
+			$save,
+			[ 'name' => 'wpSave', 'id' => 'wpSave', 'accesskey' => 's', 'title' => "$save [alt-s]" ]
+		);
+		$formAttrs = [
+			'id' => 'commentform',
+			'name' => 'commentform',
+			'method' => 'post',
+			'action' => Title::newFromText( 'AddComment', NS_SPECIAL )->getFullURL(),
+		];
+		$formFields = $op->msg( 'commentbox-intro' )->parse()
+			. $textarea
+			. $name
+			. Html::element( 'br' )
+			. Html::input( 'wpPageName', $texttitle, 'hidden' )
+			. Html::hidden( 'wpUnicodeCheck', EditPage::UNICODE_CHECK )
+			. $saveButton;
+		$text .= Html::rawElement( 'form', $formAttrs, $formFields );
 		return true;
 	}
 }

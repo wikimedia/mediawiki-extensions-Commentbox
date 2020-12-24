@@ -96,14 +96,15 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$Comment = preg_replace( '/(?<!\n)\n(?!\n)/', "<br />\n", $Comment );
 		$text .= "\n\n" . $subject . $Comment . "\n<br />" . $sig;
 
-		$reqArr = array(
+		$reqArr = [
 			'wpTextbox1' => $text,
 			'wpSummary' => $this->msg( 'commentbox-log' )->inContentLanguage()->text(),
 			'wpEditToken' => $user->getEditToken(),
 			'wpIgnoreBlankSummary' => '',
 			'wpStarttime' => wfTimestampNow(),
 			'wpEdittime' => $page->getTimestamp(),
-		);
+			'wpUnicodeCheck' => $wgRequest->getText( 'wpUnicodeCheck' ),
+		];
 		$request = new FauxRequest( $reqArr, true );
 		$ep = new EditPage( Article::newFromWikiPage( $page, $this->getContext() ) );
 		$ep->setContextTitle( $title );
