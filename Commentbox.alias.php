@@ -6,29 +6,29 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'AddComment' => array( 'AddComment' ),
-);
+$specialPageAliases['en'] = [
+	'AddComment' => [ 'AddComment' ],
+];
 
 /** Bosnian (bosanski) */
-$specialPageAliases['bs'] = array(
-	'AddComment' => array( 'DodajKomentar' ),
-);
+$specialPageAliases['bs'] = [
+	'AddComment' => [ 'DodajKomentar' ],
+];
 
 /** Croatian (hrvatski) */
-$specialPageAliases['hr'] = array(
-	'AddComment' => array( 'DodajKomentar' ),
-);
+$specialPageAliases['hr'] = [
+	'AddComment' => [ 'DodajKomentar' ],
+];
 
 /** Serbian Cyrillic (српски (ћирилица)) */
-$specialPageAliases['sr-ec'] = array(
-	'AddComment' => array( 'ДодајКоментар' ),
-);
+$specialPageAliases['sr-ec'] = [
+	'AddComment' => [ 'ДодајКоментар' ],
+];
 
 /** Serbian Latin (srpski (latinica)) */
-$specialPageAliases['sr-el'] = array(
-	'AddComment' => array( 'DodajKomentar' ),
-);
+$specialPageAliases['sr-el'] = [
+	'AddComment' => [ 'DodajKomentar' ],
+];

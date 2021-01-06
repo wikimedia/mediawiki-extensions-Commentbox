@@ -26,8 +26,9 @@ class Hooks {
 			   $wgCommentboxColumns;
 
 		$title = $op->getTitle();
-		if ( !$title->exists() )
+		if ( !$title->exists() ) {
 			return true;
+		}
 
 		if ( class_exists( 'MediaWiki\Permissions\PermissionManager' ) ) {
 			// MW 1.33+
@@ -38,25 +39,31 @@ class Hooks {
 				return true;
 			}
 		} else {
-			if ( !$title->userCan( 'edit', true ) )
+			if ( !$title->userCan( 'edit', true ) ) {
 				return true;
+			}
 		}
 
 		if ( !array_key_exists( $title->getNamespace(), $wgCommentboxNamespaces )
-			|| !$wgCommentboxNamespaces[ $title->getNamespace() ] )
+			|| !$wgCommentboxNamespaces[ $title->getNamespace() ] ) {
 			return true;
+		}
 
 		$action = $wgRequest->getVal( 'action', 'view' );
-		if ( !( $action == 'view' || $action == 'purge' || $action == 'submit' ) )
+		if ( !( $action == 'view' || $action == 'purge' || $action == 'submit' ) ) {
 			return true;
+		}
 		if ( $wgRequest->getCheck( 'wpPreview' )
 			|| $wgRequest->getCheck( 'wpLivePreview' )
-			|| $wgRequest->getCheck( 'wpDiff' ) )
+			|| $wgRequest->getCheck( 'wpDiff' ) ) {
 			return true;
-		if ( !is_null( $wgRequest->getVal( 'preview' ) ) )
+		}
+		if ( $wgRequest->getVal( 'preview' ) !== null ) {
 			return true;
-		if ( !is_null( $wgRequest->getVal( 'diff' ) ) )
+		}
+		if ( $wgRequest->getVal( 'diff' ) !== null ) {
 			return true;
+		}
 
 		$name = '';
 		if ( !$op->getUser()->isLoggedIn() ) {

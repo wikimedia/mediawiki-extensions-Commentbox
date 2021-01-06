@@ -26,25 +26,30 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		parent::__construct( 'AddComment', 'edit' );
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	public function execute( $par ) {
-		global $wgRequest, $wgOut, $wgCommentboxNamespaces;
-		if ( !$wgRequest->wasPosted() ) {
-			$wgOut->redirect( Title::newMainPage()->getFullURL() );
+		$out = $this->getOutput();
+		if ( !$this->getRequest()->wasPosted() ) {
+			$out->redirect( Title::newMainPage()->getFullURL() );
 			return;
 		}
 		$this->setHeaders();
 
-		$Pagename = $wgRequest->getText( 'wpPageName' );
-		$Author   = $wgRequest->getText( 'wpAuthor', '' );
-		$Comment  = $wgRequest->getText( 'wpComment', '' );
+		$Pagename = $this->getRequest()->getText( 'wpPageName' );
+		$Author   = $this->getRequest()->getText( 'wpAuthor', '' );
+		$Comment  = $this->getRequest()->getText( 'wpComment', '' );
 		$title = Title::newFromText( $Pagename );
-		if ( $title == NULL || !$title->exists() ) {
+		if ( $title == null || !$title->exists() ) {
 			$this->fail( 'commentbox-error-page-nonexistent' );
 			return;
 		}
 
-		if ( !array_key_exists( $title->getNamespace(), $wgCommentboxNamespaces )
-		|| !$wgCommentboxNamespaces[ $title->getNamespace() ] ) {
+		$commentboxNamespaces = $this->getConfig()->get( 'CommentboxNamespaces' );
+		if ( !array_key_exists( $title->getNamespace(), $commentboxNamespaces )
+			|| !$commentboxNamespaces[ $title->getNamespace() ]
+		) {
 			$this->fail( 'commentbox-error-namespace', $title );
 			return;
 		}
@@ -72,16 +77,16 @@ class SpecialAddComment extends UnlistedSpecialPage {
 
 		// TODO: Integrate with SpamBlacklist etc.
 		// Currently, no http/https-links are allowed at all
-		$matches = array();
+		$matches = [];
 		if ( preg_match( '@https?://[-.\w]+@', $Comment, $matches ) ||
-		    preg_match( '@https?://[-.\w]+@', $Author, $matches ) ) {
-			$wgOut->setPageTitle( $this->msg( 'spamprotectiontitle' ) );
-			$wgOut->setRobotPolicy( 'noindex,nofollow' );
-			$wgOut->setArticleRelated( false );
+			preg_match( '@https?://[-.\w]+@', $Author, $matches ) ) {
+			$out->setPageTitle( $this->msg( 'spamprotectiontitle' ) );
+			$out->setRobotPolicy( 'noindex,nofollow' );
+			$out->setArticleRelated( false );
 
-			$wgOut->addWikiMsg( 'spamprotectiontext' );
-			$wgOut->addWikiMsg( 'spamprotectionmatch', "<nowiki>{$matches[0]}</nowiki>" );
-			$wgOut->returnToMain( false, $title );
+			$out->addWikiMsg( 'spamprotectiontext' );
+			$out->addWikiMsg( 'spamprotectionmatch', "<nowiki>{$matches[0]}</nowiki>" );
+			$out->returnToMain( false, $title );
 			return;
 		}
 
@@ -89,8 +94,9 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$page = WikiPage::factory( $title );
 		$text = ContentHandler::getContentText( $page->getContent() );
 		$subject = '';
-		if ( !preg_match( $this->msg( 'commentbox-regex' )->inContentLanguage()->plain(), $text ) )
+		if ( !preg_match( $this->msg( 'commentbox-regex' )->inContentLanguage()->plain(), $text ) ) {
 			$subject = $this->msg( 'commentbox-first-comment-heading' )->inContentLanguage()->text() . "\n";
+		}
 		$sig = $user->isLoggedIn() ? "-- ~~~~" : "-- $Author ~~~~~";
 		// Append <br /> after each newline, except if the user started a new paragraph
 		$Comment = preg_replace( '/(?<!\n)\n(?!\n)/', "<br />\n", $Comment );
@@ -103,19 +109,19 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			'wpIgnoreBlankSummary' => '',
 			'wpStarttime' => wfTimestampNow(),
 			'wpEdittime' => $page->getTimestamp(),
-			'wpUnicodeCheck' => $wgRequest->getText( 'wpUnicodeCheck' ),
+			'wpUnicodeCheck' => $this->getRequest()->getText( 'wpUnicodeCheck' ),
 		];
 		$request = new FauxRequest( $reqArr, true );
 		$ep = new EditPage( Article::newFromWikiPage( $page, $this->getContext() ) );
 		$ep->setContextTitle( $title );
 		$ep->importFormData( $request );
-		$details = array(); // Passed by ref
+		$details = [];
 		$status = $ep->internalAttemptSave( $details );
 		$retval = $status->value;
 
 		switch ( $retval ) {
 		case EditPage::AS_SUCCESS_UPDATE:
-			$wgOut->redirect( $title->getFullURL() );
+			$out->redirect( $title->getFullURL() );
 			break;
 		case EditPage::AS_SPAM_ERROR:
 			$ep->spamPageWithContent( $details['spam'] );
@@ -132,13 +138,18 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		}
 	}
 
-	function fail( $str, $title = null ) {
-		global $wgOut;
-		$wgOut->setPageTitle( $this->msg( 'commentbox-errorpage-title' )->text() );
-		$wgOut->wrapWikiMsg( "<div class='errorbox'>$1</div><br clear='both' />", $str );
-		if ( $title != null )
-			$wgOut->returnToMain( false, $title );
-		return;
+	/**
+	 * Add an error message to the output.
+	 * @param string $str
+	 * @param Title|null $title
+	 */
+	private function fail( string $str, ?Title $title = null ) {
+		$out = $this->getOutput();
+		$out->setPageTitle( $this->msg( 'commentbox-errorpage-title' )->text() );
+		$out->wrapWikiMsg( "<div class='errorbox'>$1</div><br clear='both' />", $str );
+		if ( $title != null ) {
+			$out->returnToMain( false, $title );
+		}
 	}
 
 }
