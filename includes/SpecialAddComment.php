@@ -97,7 +97,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		if ( !preg_match( $this->msg( 'commentbox-regex' )->inContentLanguage()->plain(), $text ) ) {
 			$subject = $this->msg( 'commentbox-first-comment-heading' )->inContentLanguage()->text() . "\n";
 		}
-		$sig = $user->isLoggedIn() ? "-- ~~~~" : "-- $Author ~~~~~";
+		$sig = $user->isRegistered() ? "-- ~~~~" : "-- $Author ~~~~~";
 		// Append <br /> after each newline, except if the user started a new paragraph
 		$Comment = preg_replace( '/(?<!\n)\n(?!\n)/', "<br />\n", $Comment );
 		$text .= "\n\n" . $subject . $Comment . "\n<br />" . $sig;

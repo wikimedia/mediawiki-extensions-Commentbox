@@ -66,7 +66,7 @@ class Hooks {
 		}
 
 		$name = '';
-		if ( !$op->getUser()->isLoggedIn() ) {
+		if ( !$op->getUser()->isRegistered() ) {
 			$namecomment = $op->msg( 'commentbox-name-explanation' )->parse();
 			$namelabel = $op->msg( 'commentbox-name' )->parse();
 			$name = '<br />' . $namelabel;
