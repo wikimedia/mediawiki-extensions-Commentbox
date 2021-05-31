@@ -5,7 +5,7 @@
 		]
 	},
 	"commentbox-desc": "Adde un quadro pro commentos a certe paginas",
-	"commentbox-intro": "== Adde un commento... ==\nHa tu un commento super iste pagina? Adde lo hic o <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} modifica le pagina directemente]</span>.",
+	"commentbox-intro": "== Adde un commento... ==\nHa tu un commento sur iste pagina? Adde lo hic o <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} modifica le pagina directemente]</span>.",
 	"commentbox-savebutton": "Publicar commento",
 	"commentbox-name": "Nomine:",
 	"commentbox-name-explanation": "<small>(Aviso: Si tu [[Special:UserLogin|aperi un session]], il non essera necessari completar tu nomine hic manualmente)</small>",
