@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aushulz"
+			"Aushulz",
+			"Ajeje Brazorf"
 		]
 	},
-	"commentbox-name": "Nomu:"
+	"commentbox-savebutton": "Sarva cummentu",
+	"commentbox-name": "Nomu:",
+	"commentbox-log": "Cummenti novi",
+	"commentbox-first-comment-heading": "== Cummenti ==",
+	"commentbox-regex": "/\\n==\\s*Cummenti\\s*==\\s*\\n/i",
+	"commentbox-error-page-nonexistent": "Sta pàggina nun esisti!"
 }
