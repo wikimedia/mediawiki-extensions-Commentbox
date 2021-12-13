@@ -3,19 +3,20 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Karduelis",
-			"Vito Genovese"
+			"Vito Genovese",
+			"MuratTheTurkish"
 		]
 	},
 	"commentbox-desc": "Belirli sayfalara bir yorum kutusu ekler",
-	"commentbox-intro": "== Bir yorum ekle... ==\nBu sayfa ile ilgili bir yorumunuz mu var? Buraya ekleyin ya da <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} direkt olarak sayfayı değiştirin]</span>.",
+	"commentbox-intro": "== Bir yorum ekle... ==\nBu sayfa ile ilgili bir yorumunuz mu var? Buraya ekleyin veya <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} direkt olarak sayfayı değiştirin]</span>.",
 	"commentbox-savebutton": "Yorumu kaydet",
-	"commentbox-name": "İsim:",
-	"commentbox-name-explanation": "<small>(İpucu: [[Special:UserLogin|Oturum açmanız]] halinde, adınızı buraya manuel olarak girmek zorunda kalmayacaksınız)</small>",
+	"commentbox-name": "Ad:",
+	"commentbox-name-explanation": "<small>(İpucu: [[Special:UserLogin|Oturum açarsanız]], adınızı buraya manüel olarak girmek zorunda kalmayacaksınız)</small>",
 	"commentbox-log": "Yeni yorumlar",
 	"commentbox-first-comment-heading": "== Yorumlar ==",
 	"commentbox-regex": "/\\n==\\s*Yorumlar\\s*==\\s*\\n/i",
 	"commentbox-errorpage-title": "Yorumu oluşturmada hata",
 	"commentbox-error-page-nonexistent": "Bu sayfa mevcut değil!",
-	"commentbox-error-namespace": "Bu isim alanında yoruma izin verilmiyor!",
+	"commentbox-error-namespace": "Bu ad alanında yoruma izin verilmiyor!",
 	"commentbox-error-empty-comment": "Boş yorumlara izin verilmiyor!"
 }

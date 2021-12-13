@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"JSantos"
+		]
+	},
+	"commentbox-name": "Nomoː",
+	"commentbox-first-comment-heading": "== Komenti ==",
+	"commentbox-regex": "/\\n==\\s*Komenti\\s*==\\s*\\n/i"
+}
