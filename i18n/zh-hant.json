@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"LNDDYL",
-			"Mark85296341"
+			"Mark85296341",
+			"Winston Sung"
 		]
 	},
 	"commentbox-desc": "於特定頁面添加註釋框",
 	"commentbox-intro": "添加評論\n是否對此頁內容有意見？請將意見添加在此或\n直接修改此頁",
-	"commentbox-savebutton": "保存注釋",
+	"commentbox-savebutton": "儲存注釋",
 	"commentbox-name": "名稱：",
 	"commentbox-name-explanation": "<small>(提示：[[Special:UserLogin|登入]]後不需要手動填寫姓名)</small>",
 	"commentbox-log": "新評論",
