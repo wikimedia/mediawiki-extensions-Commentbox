@@ -91,7 +91,12 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		}
 
 		$user = $this->getUser();
-		$page = WikiPage::factory( $title );
+		if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
+			// MW 1.36+
+			$page = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
+		} else {
+			$page = WikiPage::factory( $title );
+		}
 		$text = ContentHandler::getContentText( $page->getContent() );
 		$subject = '';
 		if ( !preg_match( $this->msg( 'commentbox-regex' )->inContentLanguage()->plain(), $text ) ) {
