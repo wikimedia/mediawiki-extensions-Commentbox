@@ -5,5 +5,8 @@
 		]
 	},
 	"commentbox-savebutton": "Ruõkk kommeeʹnt",
-	"commentbox-name": "Nõmm:"
+	"commentbox-name": "Nõmm:",
+	"commentbox-log": "Ođđ kommeeʹnt",
+	"commentbox-first-comment-heading": "== Kommeeʹnt ==",
+	"commentbox-regex": "/\\n==\\s*Kommeeʹnt\\s*==\\s*\\n/i"
 }
