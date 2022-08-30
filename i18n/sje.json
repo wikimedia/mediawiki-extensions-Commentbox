@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Olve Utne"
+		]
+	},
+	"commentbox-log": "Åđđå målgedime",
+	"commentbox-regex": "/\\n==\\s*Målgedime\\s*==\\s*\\n/i"
+}
