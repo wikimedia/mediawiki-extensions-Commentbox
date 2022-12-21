@@ -5,11 +5,12 @@
 		]
 	},
 	"commentbox-desc": "Dodaje kutijice za komentare na izvesne strane",
-	"commentbox-intro": "== Dodavanje komentara... ==\nDa li želite da komentarišete ovu stranu? Dodajte Vaš komentar ili <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} izmenite stranu direktno]</span>.",
+	"commentbox-intro": "== Dodavanje komentara... ==\nImate komentar o ovoj stranici? Dodajte ga ili <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} uredite stranicu direktno]</span>.",
 	"commentbox-savebutton": "Snimi komentar",
 	"commentbox-name": "Ime:",
 	"commentbox-log": "Novi komentari",
 	"commentbox-first-comment-heading": "== Komentari ==",
+	"commentbox-regex": "/\\n==\\s*Komentari\\s*==\\s*\\n/i",
 	"commentbox-errorpage-title": "Greška tokom pravljenja komentara",
 	"commentbox-error-page-nonexistent": "Ova stranica ne postoji.",
 	"commentbox-error-namespace": "Komentari nisu dozvoljeni u ovom imenskom prostoru!",
