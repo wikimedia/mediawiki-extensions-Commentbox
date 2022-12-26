@@ -1,19 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
-	"commentbox-desc": "Doda polje za pripombe na nekatere strani",
-	"commentbox-intro": "== Dodajte pripombo ... ==\nImate pripombo na to stran? Dodajte jo tukaj <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} ali neposredno uredite stran]</span>.",
-	"commentbox-savebutton": "Shrani pripombo",
+	"commentbox-desc": "Na nekatere strani doda polje za komentarje",
+	"commentbox-intro": "== Dodajte komentar ... ==\nImate komentar za to stran? Dodajte ga tukaj <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} ali neposredno uredite stran]</span>.",
+	"commentbox-savebutton": "Shrani komentar",
 	"commentbox-name": "Ime:",
-	"commentbox-name-explanation": "<small>(Nasvet: Če se [[Special:UserLogin|prijavite]], vam tukaj ne bo potrebno ročno vnesti svojega imena)</small>",
-	"commentbox-log": "Nove pripombe",
-	"commentbox-first-comment-heading": "== Pripombe ==",
-	"commentbox-regex": "/\\n==\\s*Pripombe\\s*==\\s*\\n/i",
-	"commentbox-errorpage-title": "Napaka med ustvarjanjem pripombe",
+	"commentbox-name-explanation": "<small>(Nasvet: Če se boste [[Special:UserLogin|prijavili]], vam tu ne bo treba več ročno vnašati svojega imena)</small>",
+	"commentbox-log": "Novi komentarji",
+	"commentbox-first-comment-heading": "== Komentarji ==",
+	"commentbox-regex": "/\\n==\\s*Komentarji\\s*==\\s*\\n/i",
+	"commentbox-errorpage-title": "Napaka pri ustvarjanju komentarja",
 	"commentbox-error-page-nonexistent": "Ta stran ne obstaja!",
-	"commentbox-error-namespace": "Pripombe niso dovoljene v tem imenskem prostoru!",
-	"commentbox-error-empty-comment": "Prazne pripombe niso dovoljene!"
+	"commentbox-error-namespace": "V tem imenskem prostoru komentarji niso dovoljeni!",
+	"commentbox-error-empty-comment": "Prazni komentarji niso dovoljeni!"
 }
