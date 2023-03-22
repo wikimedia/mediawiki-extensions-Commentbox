@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Nghtwlkr",
 			"Simny"
 		]
 	},
 	"commentbox-desc": "Legger til en kommentarboks til enkelte sider",
-	"commentbox-intro": "== Legg til en kommentar... ==\nHar du en kommentar til denne siden? Legg den til her eller <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} endre siden direkte]</span>.",
+	"commentbox-intro": "== Legg til en kommentar ... ==\nHar du en kommentar til denne siden? Legg den til her eller <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} endre siden direkte]</span>.",
 	"commentbox-savebutton": "Lagre kommentar",
 	"commentbox-name": "Navn:",
 	"commentbox-name-explanation": "<small>(Tips: Du slipper å skrive inn navnet ditt manuelt her dersom du [[Special:UserLogin|logger inn]].)</small>",
