@@ -2,12 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Eitvys200",
-			"Manvydasz"
+			"Manvydasz",
+			"Nokeoo"
 		]
 	},
 	"commentbox-desc": "Prideda komentarų dėžutę tam tikruose puslapiuose",
+	"commentbox-intro": "== Pridėti komentarą... ==\nTurite komentarą šiam puslapiui? Pridėkite jį čia arba <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} tiesiogiai redaguokite puslapį]</span>.",
 	"commentbox-savebutton": "Išsaugoti komentarą",
 	"commentbox-name": "Pavadinimas:",
+	"commentbox-name-explanation": "<small>(Patarimas: jei [[Special:UserLogin|prisijungsite]], jums nereikės čia įvesti savo vardo rankiniu būdu)</small>",
 	"commentbox-log": "Nauji komentarai",
 	"commentbox-first-comment-heading": "== Komentarai ==",
 	"commentbox-regex": "/\\n==\\s*Komentarai\\s*==\\s*\\n/i",
