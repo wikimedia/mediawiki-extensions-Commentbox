@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"commentbox-desc": "Dodaje kutiju za komentare na određene stranice",
+	"commentbox-intro": "== Dodaj komentar... ==\nImate komentar o ovoj stranici? Pišete ga ovdje ili <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} uredite stranicu izravno]</span>.",
+	"commentbox-savebutton": "Sačuvaj komentar"
+}
