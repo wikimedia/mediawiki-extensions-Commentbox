@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fahimrazick",
 			"Karthi.dr",
 			"TRYPPN",
 			"மதனாஹரன்"
 		]
 	},
-	"commentbox-savebutton": "கருத்துரையைச் சேமிக்கவும்",
+	"commentbox-savebutton": "கருத்தைச் சேமி",
 	"commentbox-name": "பெயர்:",
 	"commentbox-log": "புதிய கருத்துக்கள்",
 	"commentbox-first-comment-heading": "== கருத்துக்கள் ==",
