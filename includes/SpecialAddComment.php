@@ -126,21 +126,21 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$retval = $status->value;
 
 		switch ( $retval ) {
-		case EditPage::AS_SUCCESS_UPDATE:
-			$out->redirect( $title->getFullURL() );
-			break;
-		case EditPage::AS_SPAM_ERROR:
-			$ep->spamPageWithContent( $details['spam'] );
-			break;
-		case EditPage::AS_BLOCKED_PAGE_FOR_USER:
-			throw new UserBlockedError( $user->getBlock() );
-		case EditPage::AS_READ_ONLY_PAGE_ANON:
-		case EditPage::AS_READ_ONLY_PAGE_LOGGED:
-			throw new PermissionsError( 'edit' );
-		case EditPage::AS_READ_ONLY_PAGE:
-			throw new ReadOnlyError;
-		default:
-			$this->fail( $status->getMessage(), $title );
+			case EditPage::AS_SUCCESS_UPDATE:
+				$out->redirect( $title->getFullURL() );
+				break;
+			case EditPage::AS_SPAM_ERROR:
+				$ep->spamPageWithContent( $details['spam'] );
+				break;
+			case EditPage::AS_BLOCKED_PAGE_FOR_USER:
+				throw new UserBlockedError( $user->getBlock() );
+			case EditPage::AS_READ_ONLY_PAGE_ANON:
+			case EditPage::AS_READ_ONLY_PAGE_LOGGED:
+				throw new PermissionsError( 'edit' );
+			case EditPage::AS_READ_ONLY_PAGE:
+				throw new ReadOnlyError;
+			default:
+				$this->fail( $status->getMessage(), $title );
 		}
 	}
 
