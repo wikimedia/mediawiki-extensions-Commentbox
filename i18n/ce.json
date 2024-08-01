@@ -5,7 +5,7 @@
 		]
 	},
 	"commentbox-name": "ЦӀе:",
-	"commentbox-log": "Керла къамелаш",
-	"commentbox-first-comment-heading": "== Къамелаш ==",
-	"commentbox-regex": "/\\n==\\s*Къамелаш\\s*==\\s*\\n/i"
+	"commentbox-log": "Керла комменташ",
+	"commentbox-first-comment-heading": "== Комменташ ==",
+	"commentbox-regex": "/\\n==\\s*Комменташ\\s*==\\s*\\n/i"
 }
