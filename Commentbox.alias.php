@@ -32,3 +32,18 @@ $specialPageAliases['sr-ec'] = [
 $specialPageAliases['sr-el'] = [
 	'AddComment' => [ 'DodajKomentar' ],
 ];
+
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'AddComment' => [ 'AddComment' ],
+];
+
+/** Simplified Chinese (中文（简体）) */
+$specialPageAliases['zh-hans'] = [
+	'AddComment' => [ '添加评论' ],
+];
+
+/** Traditional Chinese (中文（繁體）) */
+$specialPageAliases['zh-hant'] = [
+	'AddComment' => [ '新增評論' ],
+];
