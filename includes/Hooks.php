@@ -2,11 +2,11 @@
 
 namespace MediaWiki\Extension\Commentbox;
 
-use EditPage;
-use Html;
+use MediaWiki\EditPage\EditPage;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use OutputPage;
-use Title;
 
 /**
  * Hook handlers for the Commentbox extension.
@@ -30,18 +30,11 @@ class Hooks {
 			return true;
 		}
 
-		if ( class_exists( 'MediaWiki\Permissions\PermissionManager' ) ) {
-			// MW 1.33+
-			if ( !MediaWikiServices::getInstance()
-				->getPermissionManager()
-				->userCan( 'edit', $op->getUser(), $title )
-			) {
-				return true;
-			}
-		} else {
-			if ( !$title->userCan( 'edit', true ) ) {
-				return true;
-			}
+		if ( !MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'edit', $op->getUser(), $title )
+		) {
+			return true;
 		}
 
 		if ( !array_key_exists( $title->getNamespace(), $wgCommentboxNamespaces )

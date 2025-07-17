@@ -4,15 +4,14 @@ namespace MediaWiki\Extension\Commentbox;
 
 use Article;
 use ContentHandler;
-use EditPage;
-use FauxRequest;
+use MediaWiki\EditPage\EditPage;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Request\FauxRequest;
+use MediaWiki\Title\Title;
 use PermissionsError;
 use ReadOnlyError;
-use Title;
 use UnlistedSpecialPage;
 use UserBlockedError;
-use WikiPage;
 
 /**
  * Specialpage for the Commentbox extension.
@@ -59,20 +58,12 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			return;
 		}
 
-		if ( class_exists( 'MediaWiki\Permissions\PermissionManager' ) ) {
-			// MW 1.33+
-			if ( !MediaWikiServices::getInstance()
-				->getPermissionManager()
-				->userCan( 'edit', $this->getUser(), $title )
-			) {
-				$this->displayRestrictionError();
-				return;
-			}
-		} else {
-			if ( !$title->userCan( 'edit' ) ) {
-				$this->displayRestrictionError();
-				return;
-			}
+		if ( !MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'edit', $this->getUser(), $title )
+		) {
+			$this->displayRestrictionError();
+			return;
 		}
 
 		// TODO: Integrate with SpamBlacklist etc.
@@ -91,12 +82,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		}
 
 		$user = $this->getUser();
-		if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
-			// MW 1.36+
-			$page = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
-		} else {
-			$page = WikiPage::factory( $title );
-		}
+		$page = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
 		$text = ContentHandler::getContentText( $page->getContent() );
 		$subject = '';
 		if ( !preg_match( $this->msg( 'commentbox-regex' )->inContentLanguage()->plain(), $text ) ) {
@@ -122,7 +108,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$ep->setContextTitle( $title );
 		$ep->importFormData( $request );
 		$details = [];
-		$status = $ep->internalAttemptSave( $details );
+		$status = $ep->attemptSave( $details );
 		$retval = $status->value;
 
 		switch ( $retval ) {
