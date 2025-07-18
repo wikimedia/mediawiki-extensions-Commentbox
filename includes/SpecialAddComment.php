@@ -82,6 +82,20 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		}
 
 		$user = $this->getUser();
+		$tempUserCreator = MediaWikiServices::getInstance()->getTempUserCreator();
+		if ( $user->isAnon() && $tempUserCreator->shouldAutoCreate( $user, 'edit' ) ) {
+			$status = $tempUserCreator->create(
+				null,
+				$this->getRequest()
+			);
+			if ( !$status->isOK() ) {
+				$this->fail( $status->getMessage(), $title );
+				return;
+			}
+			$user = $status->getUser();
+			$this->getContext()->setUser( $user );
+		}
+
 		$page = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
 		$text = ContentHandler::getContentText( $page->getContent() );
 		$subject = '';
