@@ -5,10 +5,10 @@
 		]
 	},
 	"commentbox-desc": "Fügt in bestimmte Seiten ein Kommentarfeld ein",
-	"commentbox-intro": "== Kommentar hinzufügen … ==\nDu hast einen Kommentar zu dieser Seite? Trage ihn hier ein oder <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} bearbeite die Seite direkt]</span>.",
+	"commentbox-intro": "== Kommentar hinzufügen … ==\n{{#FORMAL:Du hast|Sie haben}} einen Kommentar zu dieser Seite? {{#FORMAL:Trage|Tragen Sie}} ihn hier ein oder <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} {{#FORMAL:bearbeite|bearbeiten Sie}} die Seite direkt]</span>.",
 	"commentbox-savebutton": "Kommentar speichern",
 	"commentbox-name": "Name:",
-	"commentbox-name-explanation": "<small>(Tipp: Wenn du dich [[Special:UserLogin|anmeldest]], musst du hier nicht mehr deinen Namen angeben)</small>",
+	"commentbox-name-explanation": "<small>(Tipp: Wenn {{#FORMAL:du dich|Sie sich}} [[Special:UserLogin|anmeldest]], {{#FORMAL:musst du|müssen Sie}} hier nicht mehr deinen Namen angeben)</small>",
 	"commentbox-log": "Neuer Kommentar",
 	"commentbox-first-comment-heading": "== Kommentare ==",
 	"commentbox-regex": "/\\n==\\s*Kommentare\\s*==\\s*\\n/i",
