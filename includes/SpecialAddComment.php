@@ -71,7 +71,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$matches = [];
 		if ( preg_match( '@https?://[-.\w]+@', $Comment, $matches ) ||
 			preg_match( '@https?://[-.\w]+@', $Author, $matches ) ) {
-			$out->setPageTitle( $this->msg( 'spamprotectiontitle' ) );
+			$out->setPageTitle( $this->msg( 'spamprotectiontitle' )->escaped() );
 			$out->setRobotPolicy( 'noindex,nofollow' );
 			$out->setArticleRelated( false );
 
