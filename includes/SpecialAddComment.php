@@ -3,23 +3,22 @@
 namespace MediaWiki\Extension\Commentbox;
 
 use Article;
-use ContentHandler;
 use MediaWiki\EditPage\EditPage;
+use MediaWiki\EditPage\IEditObject;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Request\FauxRequest;
 use MediaWiki\Title\Title;
 use PermissionsError;
 use ReadOnlyError;
+use TextContent;
 use UnlistedSpecialPage;
 use UserBlockedError;
 
 /**
  * Specialpage for the Commentbox extension.
  *
- * @file
  * @ingroup Extensions
  */
-
 class SpecialAddComment extends UnlistedSpecialPage {
 	public function __construct() {
 		parent::__construct( 'AddComment', 'edit' );
@@ -40,7 +39,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$Author   = $this->getRequest()->getText( 'wpAuthor', '' );
 		$Comment  = $this->getRequest()->getText( 'wpComment', '' );
 		$title = Title::newFromText( $Pagename );
-		if ( $title == null || !$title->exists() ) {
+		if ( !$title || !$title->exists() ) {
 			$this->fail( 'commentbox-error-page-nonexistent' );
 			return;
 		}
@@ -58,19 +57,18 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			return;
 		}
 
-		if ( !MediaWikiServices::getInstance()
-			->getPermissionManager()
+		$services = MediaWikiServices::getInstance();
+		if ( !$services->getPermissionManager()
 			->userCan( 'edit', $this->getUser(), $title )
 		) {
 			$this->displayRestrictionError();
-			return;
 		}
 
 		// TODO: Integrate with SpamBlacklist etc.
 		// Currently, no http/https-links are allowed at all
-		$matches = [];
-		if ( preg_match( '@https?://[-.\w]+@', $Comment, $matches ) ||
-			preg_match( '@https?://[-.\w]+@', $Author, $matches ) ) {
+		if ( preg_match( '@https?://[-.\w]+@i', $Comment, $matches ) ||
+			preg_match( '@https?://[-.\w]+@i', $Author, $matches )
+		) {
 			$out->setPageTitle( $this->msg( 'spamprotectiontitle' )->escaped() );
 			$out->setRobotPolicy( 'noindex,nofollow' );
 			$out->setArticleRelated( false );
@@ -82,7 +80,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		}
 
 		$user = $this->getUser();
-		$tempUserCreator = MediaWikiServices::getInstance()->getTempUserCreator();
+		$tempUserCreator = $services->getTempUserCreator();
 		if ( $user->isAnon() && $tempUserCreator->shouldAutoCreate( $user, 'edit' ) ) {
 			$status = $tempUserCreator->create(
 				null,
@@ -96,8 +94,9 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			$this->getContext()->setUser( $user );
 		}
 
-		$page = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
-		$text = ContentHandler::getContentText( $page->getContent() );
+		$page = $services->getWikiPageFactory()->newFromTitle( $title );
+		$content = $page->getContent();
+		$text = $content instanceof TextContent ? $content->getText() : '';
 		$subject = '';
 		if ( !preg_match( $this->msg( 'commentbox-regex' )->inContentLanguage()->plain(), $text ) ) {
 			$subject = $this->msg( 'commentbox-first-comment-heading' )->inContentLanguage()->text() . "\n";
@@ -126,19 +125,19 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		$retval = $status->value;
 
 		switch ( $retval ) {
-			case EditPage::AS_SUCCESS_UPDATE:
+			case IEditObject::AS_SUCCESS_UPDATE:
 				$out->redirect( $title->getFullURL() );
 				break;
-			case EditPage::AS_SPAM_ERROR:
+			case IEditObject::AS_SPAM_ERROR:
 				$ep->spamPageWithContent( $details['spam'] );
 				break;
-			case EditPage::AS_BLOCKED_PAGE_FOR_USER:
+			case IEditObject::AS_BLOCKED_PAGE_FOR_USER:
 				throw new UserBlockedError( $user->getBlock() );
-			case EditPage::AS_READ_ONLY_PAGE_ANON:
-			case EditPage::AS_READ_ONLY_PAGE_LOGGED:
+			case IEditObject::AS_READ_ONLY_PAGE_ANON:
+			case IEditObject::AS_READ_ONLY_PAGE_LOGGED:
 				throw new PermissionsError( 'edit' );
-			case EditPage::AS_READ_ONLY_PAGE:
-				throw new ReadOnlyError;
+			case IEditObject::AS_READ_ONLY_PAGE:
+				throw new ReadOnlyError();
 			default:
 				$this->fail( $status->getMessage(), $title );
 		}
