@@ -4,78 +4,77 @@ namespace MediaWiki\Extension\Commentbox;
 
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Html\Html;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Output\Hook\OutputPageBeforeHTMLHook;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\Title;
-use OutputPage;
 
 /**
  * Hook handlers for the Commentbox extension.
  *
  * @package MediaWiki\Extension\Commentbox
  */
-class Hooks {
+class Hooks implements OutputPageBeforeHTMLHook {
+
+	public function __construct(
+		private readonly PermissionManager $permissionManager,
+	) {
+	}
 
 	/**
-	 * @param OutputPage &$op
-	 * @param string &$text
-	 * @return bool
+	 * @inheritDoc
 	 */
-	public static function onOutputPageBeforeHTML( OutputPage &$op, &$text ) {
-		global $wgRequest,
-			   $wgCommentboxNamespaces, $wgCommentboxRows,
-			   $wgCommentboxColumns;
+	public function onOutputPageBeforeHTML( $out, &$text ) {
+		$request = $out->getRequest();
 
-		$title = $op->getTitle();
+		$title = $out->getTitle();
 		if ( !$title->exists() ) {
 			return true;
 		}
 
-		if ( !MediaWikiServices::getInstance()
-			->getPermissionManager()
-			->userCan( 'edit', $op->getUser(), $title )
-		) {
+		if ( !$this->permissionManager->userCan( 'edit', $out->getUser(), $title ) ) {
 			return true;
 		}
 
-		if ( !array_key_exists( $title->getNamespace(), $wgCommentboxNamespaces )
-			|| !$wgCommentboxNamespaces[ $title->getNamespace() ] ) {
+		$namespaces = $out->getConfig()->get( 'CommentboxNamespaces' );
+		if ( !array_key_exists( $title->getNamespace(), $namespaces )
+			|| !$namespaces[ $title->getNamespace() ] ) {
 			return true;
 		}
 
-		$action = $wgRequest->getVal( 'action', 'view' );
+		$action = $out->getActionName();
 		if ( !( $action == 'view' || $action == 'purge' || $action == 'submit' ) ) {
 			return true;
 		}
-		if ( $wgRequest->getCheck( 'wpPreview' )
-			|| $wgRequest->getCheck( 'wpLivePreview' )
-			|| $wgRequest->getCheck( 'wpDiff' ) ) {
+		if ( $request->getCheck( 'wpPreview' )
+			|| $request->getCheck( 'wpLivePreview' )
+			|| $request->getCheck( 'wpDiff' ) ) {
 			return true;
 		}
-		if ( $wgRequest->getVal( 'preview' ) !== null ) {
+		if ( $request->getVal( 'preview' ) !== null ) {
 			return true;
 		}
-		if ( $wgRequest->getVal( 'diff' ) !== null ) {
+		if ( $request->getVal( 'diff' ) !== null ) {
 			return true;
 		}
 
 		$name = '';
-		if ( !$op->getUser()->isRegistered() ) {
-			$namecomment = $op->msg( 'commentbox-name-explanation' )->parse();
-			$namelabel = $op->msg( 'commentbox-name' )->parse();
+		if ( !$out->getUser()->isRegistered() ) {
+			$namecomment = $out->msg( 'commentbox-name-explanation' )->parse();
+			$namelabel = $out->msg( 'commentbox-name' )->parse();
 			$name = '<br />' . $namelabel;
 			$name .= ' <input name="wpAuthor" tabindex="2" type="text" size="30" maxlength="50" /> ';
 			$name .= $namecomment;
 		}
-		$inhalt = $op->msg( 'commentbox-prefill' )->plain();
-		$save = $op->msg( 'commentbox-savebutton' )->parse();
+		$inhalt = $out->msg( 'commentbox-prefill' )->plain();
+		$save = $out->msg( 'commentbox-savebutton' )->parse();
 		$texttitle = htmlspecialchars( Title::makeName( $title->getNamespace(), $title->getText() ) );
 
 		$textarea = Html::element( 'textarea', [
 			'accesskey' => ',',
 			'name' => 'wpComment',
 			'id' => 'wpComment',
-			'rows' => $wgCommentboxRows,
-			'cols' => $wgCommentboxColumns,
+			'rows' => $out->getConfig()->get( 'CommentboxRows' ),
+			'cols' => $out->getConfig()->get( 'CommentboxColumns' ),
 		], $inhalt );
 		$saveButton = Html::submitButton(
 			$save,
@@ -87,7 +86,7 @@ class Hooks {
 			'method' => 'post',
 			'action' => Title::newFromText( 'AddComment', NS_SPECIAL )->getFullURL(),
 		];
-		$formFields = $op->msg( 'commentbox-intro' )->parse()
+		$formFields = $out->msg( 'commentbox-intro' )->parse()
 			. $textarea
 			. $name
 			. Html::element( 'br' )

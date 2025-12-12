@@ -6,7 +6,7 @@
 	"descriptionmsg": "commentbox-desc",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.41.0"
+		"MediaWiki": ">= 1.42.0"
 	},
 	"SpecialPages": {
 		"AddComment": "\\MediaWiki\\Extension\\Commentbox\\SpecialAddComment"
@@ -22,8 +22,16 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\Commentbox\\": "includes/"
 	},
+	"HookHandlers": {
+		"CommentboxHooks": {
+			"class": "MediaWiki\\Extension\\Commentbox\\Hooks",
+			"services": [
+				"PermissionManager"
+			]
+		}
+	},
 	"Hooks": {
-		"OutputPageBeforeHTML": "MediaWiki\\Extension\\Commentbox\\Hooks::onOutputPageBeforeHTML"
+		"OutputPageBeforeHTML": "CommentboxHooks"
 	},
 	"config": {
 		"CommentboxNamespaces": {
