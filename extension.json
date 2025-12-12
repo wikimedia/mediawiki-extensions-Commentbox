@@ -6,10 +6,17 @@
 	"descriptionmsg": "commentbox-desc",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.42.0"
+		"MediaWiki": ">= 1.43.0"
 	},
 	"SpecialPages": {
-		"AddComment": "\\MediaWiki\\Extension\\Commentbox\\SpecialAddComment"
+		"AddComment": {
+			"class": "MediaWiki\\Extension\\Commentbox\\SpecialAddComment",
+			"services": [
+				"PermissionManager",
+				"TempUserCreator",
+				"WikiPageFactory"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"Commentbox": [

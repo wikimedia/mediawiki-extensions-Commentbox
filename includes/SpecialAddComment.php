@@ -3,15 +3,17 @@
 namespace MediaWiki\Extension\Commentbox;
 
 use Article;
+use MediaWiki\Content\TextContent;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\EditPage\IEditObject;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Page\WikiPageFactory;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Request\FauxRequest;
+use MediaWiki\SpecialPage\UnlistedSpecialPage;
 use MediaWiki\Title\Title;
+use MediaWiki\User\TempUser\TempUserCreator;
 use PermissionsError;
 use ReadOnlyError;
-use TextContent;
-use UnlistedSpecialPage;
 use UserBlockedError;
 
 /**
@@ -20,7 +22,12 @@ use UserBlockedError;
  * @ingroup Extensions
  */
 class SpecialAddComment extends UnlistedSpecialPage {
-	public function __construct() {
+
+	public function __construct(
+		private readonly PermissionManager $permissionManager,
+		private readonly TempUserCreator $tempUserCreator,
+		private readonly WikiPageFactory $wikiPageFactory,
+	) {
 		parent::__construct( 'AddComment', 'edit' );
 	}
 
@@ -57,10 +64,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			return;
 		}
 
-		$services = MediaWikiServices::getInstance();
-		if ( !$services->getPermissionManager()
-			->userCan( 'edit', $this->getUser(), $title )
-		) {
+		if ( !$this->permissionManager->userCan( 'edit', $this->getUser(), $title ) ) {
 			$this->displayRestrictionError();
 		}
 
@@ -80,9 +84,8 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		}
 
 		$user = $this->getUser();
-		$tempUserCreator = $services->getTempUserCreator();
-		if ( $user->isAnon() && $tempUserCreator->shouldAutoCreate( $user, 'edit' ) ) {
-			$status = $tempUserCreator->create(
+		if ( $user->isAnon() && $this->tempUserCreator->shouldAutoCreate( $user, 'edit' ) ) {
+			$status = $this->tempUserCreator->create(
 				null,
 				$this->getRequest()
 			);
@@ -94,7 +97,7 @@ class SpecialAddComment extends UnlistedSpecialPage {
 			$this->getContext()->setUser( $user );
 		}
 
-		$page = $services->getWikiPageFactory()->newFromTitle( $title );
+		$page = $this->wikiPageFactory->newFromTitle( $title );
 		$content = $page->getContent();
 		$text = $content instanceof TextContent ? $content->getText() : '';
 		$subject = '';
