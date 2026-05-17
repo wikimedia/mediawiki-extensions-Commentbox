@@ -28,7 +28,12 @@ class SpecialAddComment extends UnlistedSpecialPage {
 		private readonly TempUserCreator $tempUserCreator,
 		private readonly WikiPageFactory $wikiPageFactory,
 	) {
-		parent::__construct( 'AddComment', 'edit' );
+		parent::__construct( 'AddComment' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'edit';
 	}
 
 	/**
