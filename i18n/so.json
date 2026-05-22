@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"commentbox-desc": "Waxay ku darsataa sanduuq faallo bogag gaar ah",
+	"commentbox-intro": "== Ku dar faallo... ==\nMa haysaa faallo ku saabsan boggan? Halkaan ku dar ama <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} wax ka beddel bogga si toos ah]</span>.",
+	"commentbox-savebutton": "Kaydi faallada",
+	"commentbox-name": "Magaca:",
+	"commentbox-name-explanation": "<small>(Talo: Haddii aad [[Special:UserLogin|gasho akoonkaaga]], uma baahnid inaad halkan gacanta ku geliso magacaaga)</small>",
+	"commentbox-log": "Faallooyin cusub",
+	"commentbox-first-comment-heading": "== Faallooyin ==",
+	"commentbox-regex": "/\\n==\\s*Faallooyinka\\s*==\\s*\\n/i",
+	"commentbox-errorpage-title": "Khalad ayaa dhacay marka la abuurayay faallada",
+	"commentbox-error-page-nonexistent": "Boggan ma jiro!",
+	"commentbox-error-namespace": "Faallooyin lagama oggola magac meelkaas!",
+	"commentbox-error-empty-comment": "Faallooyin madhan lama oggola!"
+}
