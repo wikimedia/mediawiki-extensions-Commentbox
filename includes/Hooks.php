@@ -69,13 +69,12 @@ class Hooks implements OutputPageBeforeHTMLHook {
 		$save = $out->msg( 'commentbox-savebutton' )->parse();
 		$texttitle = htmlspecialchars( Title::makeName( $title->getNamespace(), $title->getText() ) );
 
-		$textarea = Html::element( 'textarea', [
+		$textarea = Html::textarea( 'wpComment', $inhalt, [
 			'accesskey' => ',',
-			'name' => 'wpComment',
 			'id' => 'wpComment',
 			'rows' => $out->getConfig()->get( 'CommentboxRows' ),
 			'cols' => $out->getConfig()->get( 'CommentboxColumns' ),
-		], $inhalt );
+		] );
 		$saveButton = Html::submitButton(
 			$save,
 			[ 'name' => 'wpSave', 'id' => 'wpSave', 'accesskey' => 's', 'title' => "$save [alt-s]" ]
@@ -90,7 +89,7 @@ class Hooks implements OutputPageBeforeHTMLHook {
 			. $textarea
 			. $name
 			. Html::element( 'br' )
-			. Html::input( 'wpPageName', $texttitle, 'hidden' )
+			. Html::hidden( 'wpPageName', $texttitle )
 			. Html::hidden( 'wpUnicodeCheck', EditPage::UNICODE_CHECK )
 			. $saveButton;
 		$text .= Html::rawElement( 'form', $formAttrs, $formFields );
