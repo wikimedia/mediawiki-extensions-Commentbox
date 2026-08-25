@@ -1,14 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"commentbox-savebutton": "تبصره خوندي کول",
+	"commentbox-desc": "ځينو مخونو کې د څرگندونې‌بکس ورگډوي",
+	"commentbox-intro": "== يوه څرگندونه ورگډه کړئ...==\nتاسو په دې مخ کومه څرگندونه لرئ؟ دلته يې ورگډه کړئ يا <span class=\"plainlinks\">[{{fullurl:{{FULLPAGENAME}}|action=edit}} مخ نېغ په نېغه سم کړئ]</span>.",
+	"commentbox-savebutton": "څرگندونه خوندي‌کول",
 	"commentbox-name": "نوم:",
-	"commentbox-log": "نوې انګېرنې",
-	"commentbox-first-comment-heading": "== انګېرنې ==",
-	"commentbox-regex": "/\\n==\\s*تبصرې\\s*==\\s*\\n/i",
+	"commentbox-name-explanation": "<small>(پاملرنه: که تاسو [[Special:UserLogin|ننوتلي ياست]]؛ نو تاسو بايد دلته خپل نوم په لاسي ډول ونه ليکئ)</small>",
+	"commentbox-log": "نوې څرگندونې",
+	"commentbox-first-comment-heading": "== څرگندونې ==",
+	"commentbox-regex": "/\\n==\\s*څرگندونې\\s*==\\s*\\n/i",
+	"commentbox-errorpage-title": "د څرگندونې جوړولو پرمهال تېروتنه",
 	"commentbox-error-page-nonexistent": "پدې نوم مخ نشته!",
-	"commentbox-error-namespace": "په دې نوم-تشيال کې د انګېرنو اجازه نشته!"
+	"commentbox-error-namespace": "په دې نوم‌تشيال کې د څرگندونو اجازه نشته!",
+	"commentbox-error-empty-comment": "تشو څرگندونو ته اجازه نشته!"
 }
